@@ -1,10 +1,8 @@
 import { COLORS } from "@/utils/colors";
 import { useTheme } from "next-themes";
-import { useState } from "react";
 import { MoonIcon, SunIcon } from "../icons";
 
 export const NavbarDesktop = () => {
-  const [isHover, setIsHover] = useState(false);
   const { setTheme, theme } = useTheme();
 
   const handleTheme = () => {
@@ -18,15 +16,13 @@ export const NavbarDesktop = () => {
         <button
           className="p-2 bg-[#64636322] backdrop-blur-md rounded-full group"
           onClick={handleTheme}
-          onMouseEnter={() => setIsHover(true)}
-          onMouseLeave={() => setIsHover(false)}
           aria-label="toggle theme"
         >
           <div className="transform transition-all duration-300 ease-in-out group-hover:rotate-180">
             {theme === "dark" ? (
-              <SunIcon color={isHover ? "white" : COLORS.primarydark} />
+              <SunIcon color={COLORS.primarydark} />
             ) : (
-              <MoonIcon />
+              <MoonIcon color={COLORS.primarydark} />
             )}
           </div>
         </button>

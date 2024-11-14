@@ -1,0 +1,20 @@
+const basePathImageRooms = "/rooms";
+export const ROOMS = [
+  { url: `${basePathImageRooms}/1.jpeg`, id: 1 },
+  { url: `${basePathImageRooms}/3.jpeg`, id: 3 },
+  { url: `${basePathImageRooms}/8.jpeg`, id: 8 },
+  { url: `${basePathImageRooms}/4.jpeg`, id: 4 },
+  { url: `${basePathImageRooms}/5.jpeg`, id: 5 },
+  { url: `${basePathImageRooms}/6.jpeg`, id: 6 },
+  { url: `${basePathImageRooms}/7.jpeg`, id: 7 },
+  { url: `${basePathImageRooms}/9.jpeg`, id: 9 },
+  { url: `${basePathImageRooms}/10.jpeg`, id: 10 },
+  { url: `${basePathImageRooms}/11.jpeg`, id: 11 },
+  // { url: `${basePathImageRooms}/12.jpeg`, id: 12 },
+  { url: `${basePathImageRooms}/13.jpeg`, id: 13 },
+  { url: `${basePathImageRooms}/14.jpeg`, id: 14 },
+  { url: `${basePathImageRooms}/2.jpeg`, id: 2 },
+  { url: `${basePathImageRooms}/15.jpeg`, id: 15 },
+  { url: `${basePathImageRooms}/17.jpeg`, id: 17 },
+  { url: `${basePathImageRooms}/16.jpeg`, id: 16 },
+];

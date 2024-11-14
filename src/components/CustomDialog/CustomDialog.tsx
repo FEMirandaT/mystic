@@ -2,6 +2,7 @@
 
 import { Dialog, DialogContent, DialogPortal } from "@/components/ui/dialog";
 import { ReactNode } from "react";
+import "./styles.css";
 
 interface Props {
   children: ReactNode;
@@ -13,7 +14,7 @@ const CustomDialog = ({ children, isOpen, onOpenChange }: Props) => {
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogPortal>
-        <DialogContent className="sm:max-w-[90vw] border-none bg-transparent">
+        <DialogContent className="sm:max-w-[80vw] border-none bg-transparent p-0">
           {children}
         </DialogContent>
       </DialogPortal>

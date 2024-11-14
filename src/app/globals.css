@@ -9,5 +9,64 @@ body {
 @layer base {
   :root {
     --radius: 0.5rem;
+    --orange-gradient-background: linear-gradient(
+      90deg,
+      rgb(231, 231, 231) 0%,
+      #5eff00 50%,
+      rgb(255, 255, 255) 100%
+    );
+  }
+}
+
+.glass {
+  background: #1727184a;
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+}
+.glass-strong {
+  background: #1727184a;
+  backdrop-filter: blur(12.5px);
+  -webkit-backdrop-filter: blur(12.5px);
+}
+.glass2 {
+  background: #1818186b;
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+}
+
+.gradient1 {
+  color: inherit;
+  background-image: radial-gradient(
+      circle at 90% 50%,
+      #040500 0%,
+      rgba(255, 255, 255, 0) 89%
+    ),
+    radial-gradient(circle at 200% 200%, #090a00 0%, rgba(255, 255, 255, 0) 69%),
+    linear-gradient(140deg, #000900 1%, rgba(255, 255, 255, 0) 68%),
+    radial-gradient(circle at 200% 50%, #000000 2%, rgba(255, 255, 255, 0) 74%),
+    radial-gradient(circle at 200% 200%, rgba(255, 255, 255, 0) 0%, #000000 97%);
+}
+
+.animated-gradient-text {
+  background: var(--orange-gradient-background);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 5s linear infinite;
+  color: transparent;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
   }
 }

@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { NavbarItems } from ".";
 import { MenuIcon } from "../icons";
-import { NavbarDesktop } from "./NavbarDesktop";
 
 export const Navbar = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -14,7 +13,7 @@ export const Navbar = () => {
   return (
     <nav
       id="nav"
-      className="rounded-3xl flex w-full max-w-wrapper justify-between items-center h-88 px-4 md:px-10 z-50 glass animate-fadeIn absolute top-10 bg-transparent-10"
+      className="glass rounded-3xl flex w-full max-w-wrapper justify-between items-center h-88 px-4 md:px-10 z-50 glass animate-fadeIn fixed top-10"
     >
       <a
         href="#"
@@ -30,10 +29,9 @@ export const Navbar = () => {
           height={40}
         />
       </a>
-      <NavbarItems />
 
-      <div className="hidden lg:flex">
-        <NavbarDesktop />
+      <div className="hidden lg:flex gap-4">
+        <NavbarItems />
       </div>
       <div className="flex lg:hidden">
         <MenuIcon color={menuIconColor} />
