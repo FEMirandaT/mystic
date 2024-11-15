@@ -18,7 +18,7 @@ const Header = () => {
     return () => {};
   }, []);
   return (
-    <header className="w-screen h-screen z-0  relative font-prata" id="header">
+    <header className="w-screen h-screen z-0 relative font-prata" id="header">
       <div className="flex flex-col items-center justify-center">
         <CustomDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <video
@@ -36,7 +36,7 @@ const Header = () => {
           alt="Imagen de gradiente"
           width={1600}
           height={1600}
-          className="absolute top-2/3 right-1/2 opacity-50 pointer-events-none"
+          className="absolute top-2/3 right-1/2 opacity-50  "
         />
         <figure className="absolute -top-80 right-0 opacity-30">
           <Image

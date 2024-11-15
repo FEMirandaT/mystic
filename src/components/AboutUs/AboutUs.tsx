@@ -46,13 +46,13 @@ export const AboutUs = () => {
       className="w-full max-w-wrapper flex justify-center items-start md:items-center md:h-screen p-4 py-10 relative"
       id="about"
     >
-      <figure className="absolute bottom-[200px] right-[400px] opacity-40 pointer-events-none">
+      <figure className="absolute bottom-[200px] right-[400px] opacity-40  ">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
           width={2200}
           height={2200}
-          className="relative  pointer-events-none"
+          className="relative   "
         />
       </figure>
       <div className="flex flex-col md:flex-row gap-8">

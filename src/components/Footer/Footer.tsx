@@ -127,22 +127,22 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40 pointer-events-none">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40  ">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
           width={800}
           height={800}
-          className="relative  pointer-events-none"
+          className="relative   "
         />
       </figure>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40  ">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
           width={600}
           height={600}
-          className="relative  pointer-events-none"
+          className="relative   "
         />
       </figure>
     </footer>

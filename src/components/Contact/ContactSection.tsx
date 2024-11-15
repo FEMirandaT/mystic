@@ -43,13 +43,13 @@ const ContactSection = () => {
             "linear-gradient(to bottom, #4f830033, #90c048,#e2ffb622) 1",
         }}
       >
-        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40 pointer-events-none">
+        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40  ">
           <Image
             src="/gradients/gradientWhite.png"
             alt="Imagen de gradiente"
             width={1800}
             height={1800}
-            className="relative  pointer-events-none"
+            className="relative   "
           />
         </figure>
         <div className="flex flex-col items-center gap-2">

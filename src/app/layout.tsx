@@ -31,11 +31,11 @@ export default function RootLayout({
     <html lang="en">
       <LenisProvider isRoot>
         <body
-          className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1 overflow-hidden`}
+          className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1`}
         >
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
+            defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >

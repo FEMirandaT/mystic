@@ -10,9 +10,7 @@ interface Props {
 const ImageBlurFrame = ({ image, width, height }: Props) => {
   return (
     <div
-      className={clsx(
-        "relative p-4 glass z-10 rounded-2xl overflow-hidden pointer-events-none"
-      )}
+      className={clsx("relative p-4 glass z-10 rounded-2xl overflow-hidden  ")}
       style={{ width: `${width}px`, height: `${height}px` }}
     >
       <Image
@@ -20,14 +18,14 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
         alt="Imagen de gradiente"
         width={500}
         height={700}
-        className="absolute pointer-events-none -top-40 -right-80 z-30"
+        className="absolute   -top-40 -right-80 z-30"
       />
       <Image
         src="/gradients/gradientLight.png"
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -top-40 -left-52 z-30"
+        className="absolute   -top-40 -left-52 z-30"
       />
       <figure>
         <Image
@@ -44,14 +42,14 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -bottom-40 -left-52 z-30"
+        className="absolute   -bottom-40 -left-52 z-30"
       />
       <Image
         src="/gradients/gradientLight.png"
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -bottom-40 -right-52 z-30"
+        className="absolute   -bottom-40 -right-52 z-30"
       />
     </div>
   );

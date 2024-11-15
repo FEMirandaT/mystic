@@ -13,7 +13,7 @@ import { motion } from "motion/react";
 export default function Home() {
   const { isSidebarOpen, setSidebarOpen } = useSidebar();
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat relative overflow-hidden font-prata">
+    <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat overflow-x-hidden relative font-prata">
       <Header />
       <ContactSection />
       <h2 className="text-h10 md:text-h5 animated-gradient-text my-20">
