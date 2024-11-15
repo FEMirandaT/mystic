@@ -35,7 +35,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8">
+    <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8 overflow-y-hidden">
       <div className="w-full max-w-wrapper flex flex-col md:flex-row items-center  justify-between">
         <div className="flex flex-col items-center md:items-start justify-center space-y-8 md:space-y-4">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
