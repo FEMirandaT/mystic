@@ -5,6 +5,7 @@ import { COLORS } from "@/utils/colors";
 import { useLenis } from "@studio-freight/react-lenis";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { SOCIAL_NETWORKS } from "../Contact/ContactSection";
 import { WhatsappIcon } from "../icons";
@@ -36,7 +37,7 @@ export const Footer = () => {
   return (
     <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8">
       <div className="w-full max-w-wrapper flex flex-col md:flex-row items-center  justify-between">
-        <div className="flex flex-col items-start justify-center space-y-4">
+        <div className="flex flex-col items-center md:items-start justify-center space-y-8 md:space-y-4">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
             <button
               onClick={() => lenis?.scrollTo(`#header`)}
@@ -85,6 +86,17 @@ export const Footer = () => {
             >
               ¿Por qué nosotros?
             </motion.button>
+          </div>
+          <div className="flex flex-col items-center gap-1">
+            <p className="l1 text-p-2 text-center text-primary">
+              © Copyright 2024 — &quot;Todos los derechos reservados&quot;
+            </p>
+            <Link
+              href="www.fmiranda.com"
+              className="text-xs text-center text-primary underline"
+            >
+              Desarrollado por FMirandaDev
+            </Link>
           </div>
         </div>
 

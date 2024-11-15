@@ -20,7 +20,7 @@ export default function Home() {
       <GallerySection />
       <AboutUs />
       <Footer />
-      <figure className="absolute -bottom-[400px] -right-[400px] opacity-40 pointer-events-none">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40 pointer-events-none">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
@@ -29,7 +29,7 @@ export default function Home() {
           className="relative  pointer-events-none"
         />
       </figure>
-      <figure className="absolute -bottom-[200px] -left-52 opacity-40 pointer-events-none">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"

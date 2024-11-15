@@ -1,5 +1,6 @@
 "use client";
 import useResponsive from "@/hooks/useResponsive";
+import Link from "next/link";
 import { Dispatch, useEffect } from "react";
 import { CloseIcon } from "../icons";
 import { IconButton } from "../ui/IconButton";
@@ -50,9 +51,15 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
           <SidebarLinks />
         </div>
       </div>
-      <p className="l1 text-p-2 text-center">
+      <p className="l1 text-p-2 text-center text-primary">
         © Copyright 2024 — &quot;Todos los derechos reservados&quot;
       </p>
+      <Link
+        href="www.fmiranda.com"
+        className="text-xs text-center text-primary underline"
+      >
+        Desarrollado por FMirandaDev
+      </Link>
     </div>
   );
 };
