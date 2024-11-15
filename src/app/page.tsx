@@ -9,7 +9,6 @@ import { useSidebar } from "@/components/Providers/SidebarProvider";
 import { Sidebar } from "@/components/Sidebar";
 import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 export default function Home() {
   const { isSidebarOpen, setSidebarOpen } = useSidebar();
@@ -23,24 +22,7 @@ export default function Home() {
       <GallerySection />
       <AboutUs />
       <Footer />
-      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40 pointer-events-none">
-        <Image
-          src="/gradients/gradientWhite.png"
-          alt="Imagen de gradiente"
-          width={800}
-          height={800}
-          className="relative  pointer-events-none"
-        />
-      </figure>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none">
-        <Image
-          src="/gradients/gradientWhite.png"
-          alt="Imagen de gradiente"
-          width={600}
-          height={600}
-          className="relative  pointer-events-none"
-        />
-      </figure>
+
       <motion.a
         href="https://wa.me/+573125235520"
         target="_blank"

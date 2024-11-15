@@ -35,7 +35,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8 overflow-y-hidden">
+    <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8 overflow-hidden">
       <div className="w-full max-w-wrapper flex flex-col md:flex-row items-center  justify-between">
         <div className="flex flex-col items-center md:items-start justify-center space-y-8 md:space-y-4">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
@@ -127,6 +127,24 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
+      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40 pointer-events-none">
+        <Image
+          src="/gradients/gradientWhite.png"
+          alt="Imagen de gradiente"
+          width={800}
+          height={800}
+          className="relative  pointer-events-none"
+        />
+      </figure>
+      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none">
+        <Image
+          src="/gradients/gradientWhite.png"
+          alt="Imagen de gradiente"
+          width={600}
+          height={600}
+          className="relative  pointer-events-none"
+        />
+      </figure>
     </footer>
   );
 };
