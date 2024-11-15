@@ -8,7 +8,7 @@ const GallerySection = () => {
   const [selected, setSelected] = useState<Item | null>(null);
   return (
     <LayoutGroup>
-      <div className="w-dvw max-w-wrapper px-2">
+      <div className=" w-screen px-2" id="sede">
         <Gallery setSelected={setSelected} />
         <ImageModal selected={selected} setSelected={setSelected} />
       </div>

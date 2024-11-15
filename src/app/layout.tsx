@@ -1,3 +1,4 @@
+import { LenisProvider } from "@/components/LenisProvider";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
@@ -21,19 +22,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className}  antialiased w-full flex justify-center gradient1`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+      <LenisProvider isRoot>
+        <body
+          className={`${inter.className}  antialiased w-full flex justify-center gradient1 overflow-hidden`}
         >
-          <Navbar />
-          {children}
-        </ThemeProvider>
-      </body>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Navbar />
+            {children}
+          </ThemeProvider>
+        </body>
+      </LenisProvider>
     </html>
   );
 }

@@ -4,6 +4,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  cursor: url(/camera.png) 36 36, auto;
 }
 
 @layer base {
@@ -11,15 +12,15 @@ body {
     --radius: 0.5rem;
     --orange-gradient-background: linear-gradient(
       90deg,
-      rgb(231, 231, 231) 0%,
-      #5eff00 50%,
+      rgb(255, 255, 255) 0%,
+      #bedaaf 50%,
       rgb(255, 255, 255) 100%
     );
   }
 }
 
 .glass {
-  background: #1727184a;
+  background: #1d221e4a;
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
 }
@@ -27,6 +28,11 @@ body {
   background: #1727184a;
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
+}
+.glass-extra-strong {
+  background: #1727184a;
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
 }
 .glass2 {
   background: #1818186b;

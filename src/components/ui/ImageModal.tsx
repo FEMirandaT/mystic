@@ -22,10 +22,14 @@ const ImageModal = ({ selected, setSelected }: Props) => {
         >
           <div
             onClick={(e) => e.stopPropagation()}
-            className="w-full max-w-[700px] mx-auto my-8 px-8 cursor-default"
+            className="w-full max-w-[80%] md:max-w-[60%] mx-auto my-8 px-8 cursor-default"
           >
-            <motion.div layoutId={`card-${selected.id}`}>
-              <img src={selected.url} alt="imagen de habitación" />
+            <motion.div className="w-full" layoutId={`card-${selected.id}`}>
+              <img
+                src={selected.url}
+                alt="imagen de habitación"
+                className="w-full object-cover"
+              />
             </motion.div>
           </div>
         </motion.div>

@@ -39,9 +39,15 @@ const HeaderLeft = () => {
         />
       </div>
       <CustomButton
-        title="Contactanos"
-        onClick={() => null}
+        title="Contáctanos"
+        onClick={() =>
+          window.open(
+            "https://wa.me/+573125235520?text=Hola!%20Quisiera%20más%20información.",
+            "_blank"
+          )
+        }
         icon={<WhatsappIcon />}
+        variant="outlined"
       />
     </div>
   );

@@ -3,6 +3,7 @@ export { default as ArrowLeftIcon } from "./ArrowLeftIcon";
 export { default as ArrowRightIcon } from "./ArrowRightIcon";
 export { default as ArrowRightUpIcon } from "./ArrowRightUpIcon";
 export { default as ArrowUpIcon } from "./ArrowUpIcon";
+export { default as CameraIcon } from "./CameraIcon";
 export { default as ChevronDownIcon } from "./ChevronDownIcon";
 export { default as CloseIcon } from "./CloseIcon";
 export { default as CopyrightIcon } from "./CopyrightIcon";

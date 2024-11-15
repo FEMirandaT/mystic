@@ -1,46 +1,59 @@
 "use client";
 import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
+import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { FacebookIcon, TiktokIcon, XIcon } from "../icons";
 
-const SOCIAL_NETWORKS = [
+export const SOCIAL_NETWORKS = [
   {
     url: "www.x.com/mysticparadise",
-    icon: <XIcon color={COLORS.primarydark} size={36} />,
-    label: "X",
+    icon: <XIcon color={COLORS.primary} size={36} />,
+    label: "X.com",
     user: "@mysticparadise",
   },
   {
     url: "www.tiktok.com/mysticparadise",
-    icon: <TiktokIcon color={COLORS.primarydark} size={36} />,
+    icon: <TiktokIcon color={COLORS.primary} size={36} />,
     label: "Tik Tok",
     user: "@mysticparadise",
   },
   {
     url: "www.faceebook.com/mysticparadise",
-    icon: <FacebookIcon color={COLORS.primarydark} size={36} />,
+    icon: <FacebookIcon color={COLORS.primary} size={34} />,
     label: "Facebook",
   },
 ];
 
 const ContactSection = () => {
   return (
-    <section className="py-32 flex flex-col w-full h-screen justify-center items-center gap-10">
+    <section
+      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-40"
+      id="contact"
+    >
       <h2 className="text-h10 md:text-h5 animated-gradient-text">
         Nuestras redes
       </h2>
       <div
-        className="w-4/5 md:h-2/3 rounded-3xl glass md:glass-strong flex flex-col justify-center items-center gap-8  p-2"
+        className="w-4/5 md:h-2/3 rounded-3xl glass md:glass-extra-strong  flex flex-col justify-center items-center gap-8  p-2 relative"
         style={{
           backgroundColor: "transparent",
           border: "4px solid transparent",
           borderImage:
-            "linear-gradient(to bottom, #4f830033, #90c04822,#e2ffb622) 1",
+            "linear-gradient(to bottom, #4f830033, #90c048,#e2ffb622) 1",
         }}
       >
+        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40 pointer-events-none">
+          <Image
+            src="/gradients/gradientWhite.png"
+            alt="Imagen de gradiente"
+            width={1800}
+            height={1800}
+            className="relative  pointer-events-none"
+          />
+        </figure>
         <div className="flex flex-col items-center gap-2">
-          <h2 className="text-h5 md:text-h2.5 text-primarydark">Síguenos</h2>
+          <h2 className="text-h5 md:text-h2.5 text-primary">Síguenos</h2>
           <p className="text-xl max-w-[40rem] text-center text-primary">
             ¡Únete a nuestra vibrante comunidad en redes sociales!
           </p>
@@ -66,7 +79,7 @@ const ContactSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-14">
+        <div className="flex justify-center gap-8 md:gap-14 z-50">
           {SOCIAL_NETWORKS.map((sn) => (
             <motion.button
               key={sn.url}
@@ -74,7 +87,7 @@ const ContactSection = () => {
               className="flex flex-col gap-2 items-center"
             >
               {sn.icon}
-              <span className="text-primarydark font-semibold">{sn.label}</span>
+              <span className="text-primary font-semibold">{sn.label}</span>
             </motion.button>
           ))}
         </div>
