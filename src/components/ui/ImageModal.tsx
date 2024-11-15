@@ -15,7 +15,7 @@ const ImageModal = ({ selected, setSelected }: Props) => {
       {selected && (
         <motion.div
           onClick={() => setSelected(null)}
-          className="fixed inset-0 bg-black/80 z-50 cursor-pointer overflow-y-scroll flex items-center"
+          className="fixed inset-0 bg-black/80 z-40 cursor-pointer overflow-y-scroll flex items-center"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}

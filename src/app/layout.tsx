@@ -1,13 +1,20 @@
 import { LenisProvider } from "@/components/LenisProvider";
 import { Navbar } from "@/components/Navbar";
-import { ThemeProvider } from "@/components/theme-provider";
+import { ThemeProvider } from "@/components/Providers";
+import { SidebarProvider } from "@/components/Providers/SidebarProvider";
 import type { Metadata } from "next";
-import { Prata } from "next/font/google";
+import { Pinyon_Script, Prata } from "next/font/google";
 import "./globals.css";
 
-const inter = Prata({
+const prata = Prata({
   subsets: ["latin"],
   weight: "400",
+  variable: "--font-prata",
+});
+const pinyon = Pinyon_Script({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-pinyon",
 });
 
 export const metadata: Metadata = {
@@ -24,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       <LenisProvider isRoot>
         <body
-          className={`${inter.className}  antialiased w-full flex justify-center gradient1 overflow-hidden`}
+          className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1 overflow-hidden`}
         >
           <ThemeProvider
             attribute="class"
@@ -32,8 +39,10 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar />
-            {children}
+            <SidebarProvider>
+              <Navbar />
+              {children}
+            </SidebarProvider>
           </ThemeProvider>
         </body>
       </LenisProvider>

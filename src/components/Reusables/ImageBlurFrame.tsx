@@ -20,14 +20,14 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
         alt="Imagen de gradiente"
         width={500}
         height={700}
-        className="absolute pointer-events-none -top-40 -right-80 z-40"
+        className="absolute pointer-events-none -top-40 -right-80 z-30"
       />
       <Image
         src="/gradients/gradientLight.png"
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -top-40 -left-52 z-40"
+        className="absolute pointer-events-none -top-40 -left-52 z-30"
       />
       <figure>
         <Image
@@ -44,14 +44,14 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -bottom-40 -left-52 z-40"
+        className="absolute pointer-events-none -bottom-40 -left-52 z-30"
       />
       <Image
         src="/gradients/gradientLight.png"
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute pointer-events-none -bottom-40 -right-52 z-40"
+        className="absolute pointer-events-none -bottom-40 -right-52 z-30"
       />
     </div>
   );

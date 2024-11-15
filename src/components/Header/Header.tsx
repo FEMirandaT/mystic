@@ -18,7 +18,7 @@ const Header = () => {
     return () => {};
   }, []);
   return (
-    <header className="w-screen h-screen z-0  relative" id="header">
+    <header className="w-screen h-screen z-0  relative font-prata" id="header">
       <div className="flex flex-col items-center justify-center">
         <CustomDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <video

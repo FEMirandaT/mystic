@@ -28,7 +28,7 @@ export const SOCIAL_NETWORKS = [
 const ContactSection = () => {
   return (
     <section
-      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-40"
+      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
       id="contact"
     >
       <h2 className="text-h10 md:text-h5 animated-gradient-text">
@@ -79,7 +79,7 @@ const ContactSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-8 md:gap-14 z-50">
+        <div className="flex justify-center gap-8 md:gap-14 z-40">
           {SOCIAL_NETWORKS.map((sn) => (
             <motion.button
               key={sn.url}

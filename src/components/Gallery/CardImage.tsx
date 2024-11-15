@@ -11,7 +11,7 @@ interface PropsImage {
 const CardImage = memo(({ image, setSelected }: PropsImage) => {
   return (
     <div
-      className="inline-block w-full h-full mb-4 px-2"
+      className="inline-block w-full h-full rounded-lg"
       onClick={() => setSelected(image)}
     >
       <motion.img
@@ -25,7 +25,7 @@ const CardImage = memo(({ image, setSelected }: PropsImage) => {
         whileTap={{
           scale: 0.95,
         }}
-        className="w-full bg-base-100 shadow-xl image-full h-full cursor-pointer object-cover"
+        className="w-full bg-base-100 shadow-xl image-full h-full cursor-pointer object-cover rounded-lg"
         layoutId={`card-${image.id}`}
       />
     </div>

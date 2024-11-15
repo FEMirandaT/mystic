@@ -4,7 +4,7 @@ import { LinkItem } from "@/interfaces/links";
 import { useLenis } from "@studio-freight/react-lenis";
 import Link from "next/link";
 
-const navbarItems: LinkItem[] = [
+export const NAVBAR_LINKS: LinkItem[] = [
   { title: "Nosotros", id: "about" },
   { title: "Nuestra sede", id: "sede" },
   { title: "Contacto", id: "contact" },
@@ -14,7 +14,7 @@ export const NavbarItems = () => {
   const lenis = useLenis(({ scroll }) => {});
   return (
     <ul className="hidden lg:flex gap-8">
-      {navbarItems.map((item) => (
+      {NAVBAR_LINKS.map((item) => (
         <li className="px-2 py-5 group" key={item.id}>
           <Link
             href={`#${item.id}`}

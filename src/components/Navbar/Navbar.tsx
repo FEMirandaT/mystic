@@ -5,14 +5,16 @@ import { useLenis } from "@studio-freight/react-lenis";
 import Image from "next/image";
 import { NavbarItems } from ".";
 import { MenuIcon } from "../icons";
+import { useSidebar } from "../Providers/SidebarProvider";
 
 export const Navbar = () => {
   const lenis = useLenis(({ scroll }) => {});
+  const { toggleSidebar } = useSidebar();
 
   return (
     <nav
       id="nav"
-      className="glass rounded-3xl flex w-full max-w-wrapper justify-between items-center h-88 px-4 md:px-10 z-50 glass animate-fadeIn fixed top-2 md:top-10"
+      className="glass rounded-3xl flex w-full max-w-wrapper justify-between items-center h-88 px-4 md:px-10 z-40 glass animate-fadeIn fixed top-2 md:top-10"
     >
       <a
         href="#"
@@ -32,9 +34,9 @@ export const Navbar = () => {
       <div className="hidden lg:flex gap-4">
         <NavbarItems />
       </div>
-      <div className="flex lg:hidden">
+      <button className="flex lg:hidden" onClick={toggleSidebar}>
         <MenuIcon color={COLORS.primary} size={36} />
-      </div>
+      </button>
     </nav>
   );
 };

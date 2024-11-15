@@ -10,6 +10,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        prata: ["var(--font-prata)"],
+        pinyon: ["var(--font-pinyon)"],
+      },
       maxWidth: {
         "mw-container": "1440px",
         wrapper: "1224px",
@@ -32,6 +36,7 @@ const config: Config = {
         primary: "#eaffcb",
         primaryButton: "#4f8300",
         primarydark: "#90c048",
+        primarydarkest: "#203500",
         "transparent-10": "#00000014",
       },
       borderRadius: {
