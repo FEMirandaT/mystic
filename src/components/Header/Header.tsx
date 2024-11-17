@@ -1,14 +1,17 @@
 "use client";
 
+import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { CustomDialog } from "../CustomDialog";
 import FloatingImages from "./FloatingImages";
 import HeaderLeft from "./HeaderLeft";
 import HeaderRight from "./HeaderRight";
+import HeaderRightAnimated from "./HeaderRightAnimated";
 
 const Header = () => {
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const { isMobile } = useResponsive();
 
   useEffect(() => {
     setTimeout(() => {
@@ -48,7 +51,7 @@ const Header = () => {
           />
         </figure>
         <HeaderLeft />
-        <HeaderRight />
+        {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
         <FloatingImages />
       </div>
     </header>
