@@ -10,7 +10,7 @@ const HeaderRight = () => {
         "flex"
       )}
     >
-      <ImageBlurFrame height={800} width={550} image="/header/woman.png" />
+      <ImageBlurFrame height={640} width={440} image="/header/woman.png" />
     </div>
   );
 };
