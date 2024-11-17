@@ -21,7 +21,7 @@ const ImageModal = ({ selected, setSelected }: Props) => {
           exit={{ opacity: 0 }}
         >
           <div
-            onClick={(e) => e.stopPropagation()}
+            onClick={() => setSelected(null)}
             className="w-full max-w-[95%] md:max-w-[60%] mx-auto my-8 md:px-8 cursor-default"
           >
             <motion.div className="w-full" layoutId={`card-${selected.id}`}>

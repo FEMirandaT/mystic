@@ -23,7 +23,7 @@ const config: Config = {
         header: "url('/header.png')",
         header2: "url('/header2.png')",
         header3: "url('/header3.jpg')",
-        header4: "url('/header4.jpg')",
+        header4: "url('/header4.webp')",
         bgWhite: "url('/bwhite.jpg')",
         bgWhite2: "url('/bwhite2.jpg')",
         bgMulti: "url('/backgrounds/bg-multicolor.jpg')",

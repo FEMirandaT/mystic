@@ -15,7 +15,7 @@ interface GalleryProps {
 
 const Gallery = memo(({ setSelected }: GalleryProps) => {
   return (
-    <div className="w-screen rounded-3xl px-2">
+    <div className="w-screen rounded-3xl px-2 relative">
       <ResponsiveMasonry columnsCountBreakPoints={{ 350: 2, 750: 3 }}>
         <Masonry gutter="0.8rem">
           <div className="bg-gold w-full h-full md:min-h-96 rounded-xl flex justify-center items-center">

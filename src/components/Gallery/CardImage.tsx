@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Dispatch, memo } from "react";
 import { Item } from "./Gallery";
 
@@ -10,25 +11,27 @@ interface PropsImage {
 
 const CardImage = memo(({ image, setSelected }: PropsImage) => {
   return (
-    <div
-      className="inline-block w-full h-full rounded-lg"
+    <motion.div
+      className="w-full h-full rounded-lg relative  min-h-60"
       onClick={() => setSelected(image)}
+      whileHover={{
+        scale: 1.025,
+        transition: {
+          duration: 0.2,
+        },
+      }}
+      whileTap={{
+        scale: 0.95,
+      }}
+      layoutId={`card-${image.id}`}
     >
-      <motion.img
+      <Image
         src={image.url}
-        whileHover={{
-          scale: 1.025,
-          transition: {
-            duration: 0.2,
-          },
-        }}
-        whileTap={{
-          scale: 0.95,
-        }}
-        className="w-full bg-base-100 shadow-xl image-full h-full cursor-pointer object-cover rounded-lg"
-        layoutId={`card-${image.id}`}
+        className="bg-base-100 shadow-xl w-full cursor-pointer object-cover rounded-lg"
+        alt="Gallery image"
+        fill
       />
-    </div>
+    </motion.div>
   );
 });
 CardImage.displayName = "CardImage";
