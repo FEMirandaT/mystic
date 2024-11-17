@@ -9,7 +9,6 @@ const HeaderRight = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const scale = useTransform(scrollYProgress, [0, 0.3], [0.8, 3.5]);
-  const y = useTransform(scrollYProgress, [0, 0.4], ["10%", "90%"]);
   const opacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
 
   useEffect(() => {
@@ -25,7 +24,7 @@ const HeaderRight = () => {
         "absolute flex justify-center w-full -bottom-36 pointer-events-none",
         isVisible ? "flex" : "hidden"
       )}
-      style={{ scale, y, opacity }}
+      style={{ scale, opacity }}
       onAnimationEnd={() => setIsVisible(false)}
     >
       <ImageBlurFrame height={800} width={550} image="/header/woman.png" />
