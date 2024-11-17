@@ -54,7 +54,7 @@ export const Footer = () => {
             </button>
             <div className="flex flex-col items-center md:items-start gap-4 md:gap-8">
               <a
-                href="https://wa.me/+573125235520"
+                href="https://wa.me/+573027557903 "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary flex gap-2 items-center"
@@ -68,20 +68,23 @@ export const Footer = () => {
                 </h4>
                 <div className="flex gap-4">
                   {SOCIAL_NETWORKS.map((sn) => (
-                    <motion.button
+                    <motion.a
                       key={sn.url}
+                      href={sn.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       whileHover={{ scale: 2 }}
                       className="flex flex-col gap-2 items-center"
                     >
                       {sn.icon}
-                    </motion.button>
+                    </motion.a>
                   ))}
                 </div>
               </div>
             </div>
             <motion.button
               onClick={() => lenis?.scrollTo("#about")}
-              className="text-primary text-3xl"
+              className="text-primary text-3xl underline"
               whileHover={{ scale: 1.1 }}
             >
               ¿Por qué nosotros?
@@ -127,7 +130,7 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40  ">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40  pointer-events-none">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
@@ -136,7 +139,7 @@ export const Footer = () => {
           className="relative   "
         />
       </figure>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40  ">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none ">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"

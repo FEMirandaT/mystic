@@ -42,7 +42,7 @@ const HeaderLeft = () => {
         title="Contáctanos"
         onClick={() =>
           window.open(
-            "https://wa.me/+573125235520?text=Hola!%20Quisiera%20más%20información.",
+            "https://wa.me/+573027557903 ?text=Hola!%20Quisiera%20más%20información.",
             "_blank"
           )
         }

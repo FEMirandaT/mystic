@@ -14,7 +14,7 @@ const CustomDialog = ({ children, isOpen, onOpenChange }: Props) => {
   return (
     <Dialog open={isOpen} onOpenChange={onOpenChange}>
       <DialogPortal>
-        <DialogContent className="sm:max-w-[80vw] border-none bg-transparent p-0">
+        <DialogContent className="sm:max-w-[80vw] border-none bg-transparent p-0 z-50">
           {children}
         </DialogContent>
       </DialogPortal>

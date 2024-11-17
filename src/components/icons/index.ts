@@ -8,6 +8,7 @@ export { default as ChevronDownIcon } from "./ChevronDownIcon";
 export { default as CloseIcon } from "./CloseIcon";
 export { default as CopyrightIcon } from "./CopyrightIcon";
 export { default as FacebookIcon } from "./FacebookIcon";
+export { default as InstagramIcon } from "./InstagramIcon";
 export { default as IsoIcon } from "./IsoIcon";
 export { default as MenuIcon } from "./MenuIcon";
 export { default as MoonIcon } from "./MoonIcon";

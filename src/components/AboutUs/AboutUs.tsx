@@ -20,7 +20,7 @@ const BENEFICIOS = [
   },
   {
     id: 4,
-    text: "Pagos puntuales y seguros cada quinceena, sin retrasos ni excusas",
+    text: "Pagos puntuales y seguros cada quincena, sin retrasos ni excusas",
   },
   {
     id: 5,
@@ -37,6 +37,10 @@ const BENEFICIOS = [
   {
     id: 8,
     text: "Bonos especiales por cumplimiento de metas y trabajo en equipo",
+  },
+  {
+    id: 9,
+    text: "Fotografías profesionales mensuales.",
   },
 ];
 
@@ -59,7 +63,7 @@ export const AboutUs = () => {
         <div className="flex flex-1 justify-start items-start">
           <h2 className="text-primary text-h10 md:text-h5 leading-[0.9]">
             ¿Por qué <br />
-            <p className="text-primarydark">nosotros?</p>
+            <p className="text-gold">nosotros?</p>
           </h2>
         </div>
         <ul className="flex flex-col flex-1 gap-4">
@@ -71,12 +75,12 @@ export const AboutUs = () => {
             >
               <CameraIcon
                 size={36}
-                color={i % 2 === 0 ? COLORS.primary : COLORS.primarydark}
+                color={i % 2 === 0 ? COLORS.primary : COLORS.gold}
               />
               <p
                 className={clsx(
                   "text-lg",
-                  i % 2 === 0 ? "text-primary" : "text-primarydark"
+                  i % 2 === 0 ? "text-primary" : "text-gold"
                 )}
               >
                 {b.text}.

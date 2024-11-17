@@ -34,6 +34,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#eaffcb",
+        gold: "#ffeb44",
         primaryButton: "#4f8300",
         primarydark: "#90c048",
         primarydarkest: "#203500",

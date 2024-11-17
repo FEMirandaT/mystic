@@ -36,9 +36,9 @@ const Header = () => {
           alt="Imagen de gradiente"
           width={1600}
           height={1600}
-          className="absolute top-2/3 right-1/2 opacity-50  "
+          className="absolute top-2/3 right-1/2 opacity-50  pointer-events-none"
         />
-        <figure className="absolute -top-80 right-0 opacity-30">
+        <figure className="absolute -top-80 right-0 opacity-30 pointer-events-none">
           <Image
             src="/gradients/gradientWhite.png"
             alt="Imagen de gradiente"

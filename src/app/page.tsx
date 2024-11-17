@@ -24,7 +24,7 @@ export default function Home() {
       <Footer />
 
       <motion.a
-        href="https://wa.me/+573125235520"
+        href="https://wa.me/+573027557903 "
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.2 }}

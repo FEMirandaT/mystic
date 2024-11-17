@@ -3,23 +3,23 @@ import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FacebookIcon, TiktokIcon, XIcon } from "../icons";
+import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons";
 
 export const SOCIAL_NETWORKS = [
   {
-    url: "www.x.com/mysticparadise",
-    icon: <XIcon color={COLORS.primary} size={36} />,
+    url: "https://www.instagram.com/mysticparadisebogota?igsh=MWhnNmhtbWV3OXA2eA==",
+    icon: <InstagramIcon color={COLORS.primary} size={36} />,
     label: "X.com",
     user: "@mysticparadise",
   },
   {
-    url: "www.tiktok.com/mysticparadise",
+    url: "https://www.tiktok.com/@studio.wc.mystic?_t=8rS5U5rvZEz&_r=1",
     icon: <TiktokIcon color={COLORS.primary} size={36} />,
     label: "Tik Tok",
     user: "@mysticparadise",
   },
   {
-    url: "www.faceebook.com/mysticparadise",
+    url: "https://www.facebook.com/profile.php?id=100092679301342&mibextid=ZbWKwL",
     icon: <FacebookIcon color={COLORS.primary} size={34} />,
     label: "Facebook",
   },
@@ -28,7 +28,7 @@ export const SOCIAL_NETWORKS = [
 const ContactSection = () => {
   return (
     <section
-      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
+      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-40"
       id="contact"
     >
       <h2 className="text-h10 md:text-h5 animated-gradient-text">
@@ -43,13 +43,13 @@ const ContactSection = () => {
             "linear-gradient(to bottom, #4f830033, #90c048,#e2ffb622) 1",
         }}
       >
-        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40  ">
+        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40 pointer-events-none ">
           <Image
             src="/gradients/gradientWhite.png"
             alt="Imagen de gradiente"
             width={1800}
             height={1800}
-            className="relative   "
+            className="relative pointer-events-none"
           />
         </figure>
         <div className="flex flex-col items-center gap-2">
@@ -79,16 +79,19 @@ const ContactSection = () => {
             />
           </div>
         </div>
-        <div className="flex justify-center gap-8 md:gap-14 z-40">
+        <div className="flex justify-center gap-8 md:gap-14 z-50">
           {SOCIAL_NETWORKS.map((sn) => (
-            <motion.button
+            <motion.a
               key={sn.url}
+              href={sn.url}
+              target="_blank"
               whileHover={{ scale: 2 }}
-              className="flex flex-col gap-2 items-center"
+              rel="noopener noreferrer"
+              className="flex flex-col gap-2 items-center z-50"
             >
               {sn.icon}
               <span className="text-primary font-semibold">{sn.label}</span>
-            </motion.button>
+            </motion.a>
           ))}
         </div>
       </div>

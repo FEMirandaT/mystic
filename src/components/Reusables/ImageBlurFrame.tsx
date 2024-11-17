@@ -42,14 +42,14 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute   -bottom-40 -left-52 z-30"
+        className="absolute   -bottom-40 -left-52 z-30 pointer-events-none"
       />
       <Image
         src="/gradients/gradientLight.png"
         alt="Imagen de gradiente"
         width={500}
         height={500}
-        className="absolute   -bottom-40 -right-52 z-30"
+        className="absolute   -bottom-40 -right-52 z-30 pointer-events-none"
       />
     </div>
   );
