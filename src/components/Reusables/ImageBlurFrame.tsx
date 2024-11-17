@@ -32,6 +32,7 @@ const ImageBlurFrame = ({ image, width, height }: Props) => {
           src={image}
           alt="Image for reference"
           fill
+          priority
           quality={100}
           objectFit="cover"
           className="pt-4 border-4 border-t-8 border-r-4 border-t-lime-100 border-x-lime-200 border-b-lime-400 rounded-3xl z-20"
