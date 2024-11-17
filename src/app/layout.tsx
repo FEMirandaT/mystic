@@ -2,8 +2,10 @@ import { LenisProvider } from "@/components/LenisProvider";
 import { Navbar } from "@/components/Navbar";
 import { ThemeProvider } from "@/components/Providers";
 import { SidebarProvider } from "@/components/Providers/SidebarProvider";
+import { COLORS } from "@/utils/colors";
 import type { Metadata } from "next";
 import { Pinyon_Script, Prata } from "next/font/google";
+import Head from "next/head";
 import "./globals.css";
 
 const prata = Prata({
@@ -29,6 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content={COLORS.primarydarkest} />
+      </Head>
       <LenisProvider isRoot>
         <body
           className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1`}
