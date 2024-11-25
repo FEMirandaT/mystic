@@ -12,7 +12,7 @@ interface PropsImage {
 const CardImage = memo(({ image, setSelected }: PropsImage) => {
   return (
     <motion.div
-      className="w-full h-full rounded-lg relative  min-h-60"
+      className="w-full h-full rounded-lg relative  md:min-h-[500px]"
       onClick={() => setSelected(image)}
       whileHover={{
         scale: 1.025,

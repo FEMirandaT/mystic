@@ -16,9 +16,17 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat overflow-x-hidden relative font-prata">
       <Header />
       <ContactSection />
-      <h2 className="text-h10 md:text-h5 animated-gradient-text my-20">
-        Nuestra sede
-      </h2>
+      <div className="flex flex-col items-center my-20">
+        <h2 className="text-h10 md:text-h5 animated-gradient-text ">
+          Nuestra sede
+        </h2>
+        <p className="text-h5 md:text-h2.5 animated-gradient-text">
+          Estamos ubicados en el barrio El Galán
+        </p>
+        <p className="text-h5 md:text-h2.5 animated-gradient-text">
+          Cerca a la Estación Pradera
+        </p>
+      </div>
       <GallerySection />
       <AboutUs />
       <Footer />
