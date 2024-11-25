@@ -64,7 +64,7 @@ const OTROS_BENEFICIOS = [
 export const AboutUs = () => {
   return (
     <section
-      className="w-full max-w-wrapper flex flex-col items-center md:items-center md:min-h-screen p-4 py-10 relative my-10"
+      className="w-full max-w-wrapper flex flex-col items-center md:items-center md:min-h-screen p-4 md:py-10 relative md:my-10"
       id="about"
     >
       <figure className="absolute bottom-[200px] right-[400px] opacity-40  ">
