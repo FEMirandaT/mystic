@@ -16,7 +16,7 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat overflow-x-hidden relative font-prata">
       <Header />
       <ContactSection />
-      <div className="flex flex-col items-center md:my-20">
+      <div className="flex flex-col items-center my-10 md:my-20">
         <h2 className="text-h10 md:text-h5 animated-gradient-text ">
           Nuestra sede
         </h2>
