@@ -24,7 +24,7 @@ export default function Home() {
           Estamos ubicados en el barrio El Galán
         </p>
         <p className="text-h5 md:text-h2.5 animated-gradient-text">
-          Cerca a la Estación Pradera
+          Cerca a la Estación Pradera y Outlet de las Américas
         </p>
       </div>
       <GallerySection />

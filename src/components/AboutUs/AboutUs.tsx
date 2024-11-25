@@ -43,11 +43,28 @@ const BENEFICIOS = [
     text: "Fotografías profesionales mensuales.",
   },
 ];
+const OTROS_BENEFICIOS = [
+  { id: 1, text: "Pagos hasta el 60%" },
+  { id: 2, text: "Gran premio Anual" },
+  { id: 3, text: "Premio Mensual" },
+  { id: 4, text: "Bonos semanales" },
+  { id: 5, text: "Habitaciones de Lujo" },
+  { id: 6, text: "Zona de Maquillaje" },
+  { id: 7, text: "Zona de descanso" },
+  { id: 8, text: "Zona de Alimentación" },
+  { id: 9, text: "Parqueadero cubierto" },
+  { id: 10, text: "Capacitaciones" },
+  { id: 11, text: "Certificado Laboral" },
+  { id: 12, text: "Pagos Quincenales Puntuales" },
+  { id: 13, text: "Fotografía profesional mensual" },
+  { id: 14, text: "Video profesional cada 6 meses" },
+  { id: 15, text: "Convenio Guía Cereza y Diver Joy" },
+];
 
 export const AboutUs = () => {
   return (
     <section
-      className="w-full max-w-wrapper flex justify-center items-start md:items-center md:h-screen p-4 py-10 relative"
+      className="w-full max-w-wrapper flex flex-col items-center md:items-center md:min-h-screen p-4 py-10 relative my-10"
       id="about"
     >
       <figure className="absolute bottom-[200px] right-[400px] opacity-40  ">
@@ -86,6 +103,18 @@ export const AboutUs = () => {
                 {b.text}.
               </p>
             </motion.li>
+          ))}
+        </ul>
+      </div>
+      <div className="flex flex-col items-center mt-20 gap-5">
+        <h2 className="text-h5 md:text-h2.5  text-gold">
+          Además tambien te brindamos
+        </h2>
+        <ul className="flex flex-col items-center gap-2 md:gap-4 list-disc">
+          {OTROS_BENEFICIOS.map((item) => (
+            <li className="" key={item.id}>
+              <p className="text-xl text-primary">{item.text}</p>
+            </li>
           ))}
         </ul>
       </div>

@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const GALLERY_IMAGE_HEADER = [
-  "/rooms/1.jpeg",
-  "/rooms/2.jpeg",
-  "/rooms/3.jpeg",
-  "/rooms/4.jpeg",
-  "/rooms/5.jpeg",
-  "/rooms/6.jpeg",
+  "/rooms/1.webp",
+  "/rooms/2.webp",
+  "/rooms/3.webp",
+  "/rooms/4.webp",
+  "/rooms/5.webp",
+  "/rooms/6.webp",
 ];
 
 const RandomPositionsMap: { [key: string]: { x: number; y: number } } = {

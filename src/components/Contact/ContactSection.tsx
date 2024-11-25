@@ -3,12 +3,12 @@ import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons";
+import { FacebookIcon, TiktokIcon, XIcon } from "../icons";
 
 export const SOCIAL_NETWORKS = [
   {
     url: "https://www.instagram.com/mysticparadisebogota?igsh=MWhnNmhtbWV3OXA2eA==",
-    icon: <InstagramIcon color={COLORS.primary} size={36} />,
+    icon: <XIcon color={COLORS.primary} size={36} />,
     label: "X.com",
     user: "@mysticparadise",
   },

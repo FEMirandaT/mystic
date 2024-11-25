@@ -27,7 +27,7 @@ const CardImage = memo(({ image, setSelected }: PropsImage) => {
     >
       <Image
         src={image.url}
-        className="bg-base-100 shadow-xl w-full cursor-pointer object-cover rounded-lg"
+        className="bg-base-100 shadow-xl w-full cursor-pointer object-cover h-full rounded-lg"
         alt="Gallery image"
         fill
       />
