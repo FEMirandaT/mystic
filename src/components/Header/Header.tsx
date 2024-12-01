@@ -2,28 +2,26 @@
 
 import useResponsive from "@/hooks/useResponsive";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import { CustomDialog } from "../CustomDialog";
 import FloatingImages from "./FloatingImages";
 import HeaderLeft from "./HeaderLeft";
 import HeaderRight from "./HeaderRight";
 import HeaderRightAnimated from "./HeaderRightAnimated";
 
 const Header = () => {
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  // const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { isMobile } = useResponsive();
 
-  useEffect(() => {
-    setTimeout(() => {
-      setIsDialogOpen(true);
-    }, 200);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setIsDialogOpen(true);
+  //   }, 200);
 
-    return () => {};
-  }, []);
+  //   return () => {};
+  // }, []);
   return (
     <header className="w-screen h-screen z-0 relative font-prata" id="header">
       <div className="flex flex-col items-center justify-center">
-        <CustomDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
+        {/* <CustomDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <video
             src="/modal.mp4"
             id="modal-video"
@@ -33,7 +31,7 @@ const Header = () => {
             controls
             onEnded={() => setIsDialogOpen(false)}
           />
-        </CustomDialog>
+        </CustomDialog> */}
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"

@@ -17,7 +17,6 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
   const { isMobile } = useResponsive();
 
   const handleCLose = () => {
-    console.log("click", { isSidebarOpen });
     setSidebarOpen(false);
   };
 
