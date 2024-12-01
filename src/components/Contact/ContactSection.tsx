@@ -85,6 +85,7 @@ const ContactSection = () => {
               key={sn.url}
               href={sn.url}
               target="_blank"
+              aria-label={`Icon that takes you to the network ${sn.label}`}
               whileHover={{ scale: 2 }}
               rel="noopener noreferrer"
               className="flex flex-col gap-2 items-center z-50"

@@ -23,7 +23,7 @@ const RandomPositionsMap: { [key: string]: { x: number; y: number } } = {
 const FloatingImages = () => {
   return (
     <div
-      className={`absolute w-full h-full top-0 left-0 flex items-center justify-center ${"z-10"}`}
+      className={`absolute w-full h-full top-0 left-0 md:flex items-center justify-center ${"z-10"} hidden`}
     >
       <div className="relative w-full h-full flex justify-center items-center">
         {GALLERY_IMAGE_HEADER.map((image, index) => (

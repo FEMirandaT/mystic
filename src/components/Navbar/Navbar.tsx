@@ -34,7 +34,11 @@ export const Navbar = () => {
       <div className="hidden lg:flex gap-4">
         <NavbarItems />
       </div>
-      <button className="flex lg:hidden" onClick={toggleSidebar}>
+      <button
+        className="flex lg:hidden"
+        onClick={toggleSidebar}
+        aria-label="Button Sidenar menu open"
+      >
         <MenuIcon color={COLORS.primary} size={36} />
       </button>
     </nav>

@@ -33,6 +33,7 @@ export default function Home() {
 
       <motion.a
         href="https://wa.me/+573027557903 "
+        aria-label="whatasapp icon that takes you to the whatsapp aplication"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.2 }}

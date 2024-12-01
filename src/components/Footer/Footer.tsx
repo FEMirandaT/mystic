@@ -54,7 +54,8 @@ export const Footer = () => {
             </button>
             <div className="flex flex-col items-center md:items-start gap-4 md:gap-8">
               <a
-                href="https://wa.me/+573027557903 "
+                href="https://wa.me/+573027557903"
+                aria-label="whatasapp icon that takes you to the whatsapp aplication"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary flex gap-2 items-center"
@@ -63,9 +64,9 @@ export const Footer = () => {
                 <span>Contactanos a nuestro Whatsapp</span>
               </a>
               <div className="flex flex-col gap-4">
-                <h4 className="text-primary text-sm">
+                <h2 className="text-primary text-sm">
                   Nuestras redes sociales
-                </h4>
+                </h2>
                 <div className="flex gap-4">
                   {SOCIAL_NETWORKS.map((sn) => (
                     <motion.a

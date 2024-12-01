@@ -29,6 +29,11 @@ body {
   backdrop-filter: blur(12.5px);
   -webkit-backdrop-filter: blur(12.5px);
 }
+.glass-extra-strong-sidebar {
+  background: #1727184a;
+  backdrop-filter: blur(16.5px);
+  -webkit-backdrop-filter: blur(16.5px);
+}
 .glass-extra-strong {
   background: #1727184a;
   backdrop-filter: blur(16.5px);

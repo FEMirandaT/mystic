@@ -9,7 +9,7 @@ export const SidebarLinks = () => {
   const { toggleSidebar } = useSidebar();
 
   return (
-    <div className="flex flex-col gap-4 flex-1">
+    <ul className="flex flex-col gap-4 flex-1">
       {NAVBAR_LINKS.map((item) => (
         <li className="px-2 py-5 group list-none" key={item.id}>
           <Link
@@ -27,6 +27,6 @@ export const SidebarLinks = () => {
           </Link>
         </li>
       ))}
-    </div>
+    </ul>
   );
 };
