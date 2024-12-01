@@ -6,7 +6,7 @@ const HeaderRight = () => {
   return (
     <div
       className={clsx(
-        "absolute flex justify-center w-full -bottom-36 pointer-events-none",
+        "flex justify-center w-full -bottom-36 pointer-events-none",
         "flex"
       )}
     >

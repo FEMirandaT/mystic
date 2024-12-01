@@ -56,6 +56,7 @@ const FloatingImages = () => {
           >
             <Image
               src={image}
+              sizes="(max-width: 750px) 50vw, 25vw"
               alt="Imagen de uno de los cuartos"
               fill
               quality={100}

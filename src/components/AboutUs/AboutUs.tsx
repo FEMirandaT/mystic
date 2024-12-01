@@ -72,6 +72,7 @@ export const AboutUs = () => {
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
           width={2200}
+          sizes="(max-width: 750px) 50vw, 25vw"
           height={2200}
           className="relative   "
         />

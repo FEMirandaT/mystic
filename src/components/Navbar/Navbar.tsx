@@ -28,6 +28,7 @@ export const Navbar = () => {
           className="w-15 md:w-108 z-20"
           width={80}
           height={40}
+          sizes="(max-width: 750px) 50vw, 25vw"
         />
       </a>
 

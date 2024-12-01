@@ -45,6 +45,7 @@ export const Footer = () => {
             >
               <Image
                 src={"/logo.png"}
+                sizes="(max-width: 750px) 50vw, 25vw"
                 alt=""
                 quality={100}
                 className="w-15 md:w-108 z-20"
@@ -124,6 +125,7 @@ export const Footer = () => {
             <Image
               src={images[currentImageIndex]}
               alt={`Footer Image ${currentImageIndex + 1}`}
+              sizes="(max-width: 750px) 50vw, 25vw"
               fill
               quality={100}
               className="object-cover rounded-lg"
@@ -134,6 +136,7 @@ export const Footer = () => {
       <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40  pointer-events-none">
         <Image
           src="/gradients/gradientWhite.png"
+          sizes="(max-width: 750px) 50vw, 25vw"
           alt="Imagen de gradiente"
           width={800}
           height={800}
@@ -144,6 +147,7 @@ export const Footer = () => {
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
+          sizes="(max-width: 750px) 50vw, 25vw"
           width={600}
           height={600}
           className="relative   "

@@ -28,7 +28,7 @@ export const SOCIAL_NETWORKS = [
 const ContactSection = () => {
   return (
     <section
-      className="pt-52 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
+      className="pt-12 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
       id="contact"
     >
       <h2 className="text-h10 md:text-h5 animated-gradient-text">
@@ -47,6 +47,7 @@ const ContactSection = () => {
           <Image
             src="/gradients/gradientWhite.png"
             alt="Imagen de gradiente"
+            sizes="(max-width: 750px) 50vw, 25vw"
             width={1800}
             height={1800}
             className="relative pointer-events-none"

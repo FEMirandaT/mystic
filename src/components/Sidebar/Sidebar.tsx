@@ -45,17 +45,17 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
       <div className="flex flex-col flex-1 mt-20">
         <div className="w-full relative flex flex-col gap-20">
           <div className={`transition-all flex flex-col gap-8`}>
-            <h3 className="text-h10 text-white  inline">Menú</h3>
+            <h3 className="text-h10 text-primarydark  inline">Menú</h3>
           </div>
           <SidebarLinks />
         </div>
       </div>
-      <p className="l1 text-p-2 text-center text-primary">
+      <p className="l1 text-p-2 text-center text-primarydark">
         © Copyright 2024 — &quot;Todos los derechos reservados&quot;
       </p>
       <Link
         href="www.fmiranda.com"
-        className="text-xs text-center text-primary underline"
+        className="text-xs text-center text-primarydark underline"
       >
         Desarrollado por FMirandaDev
       </Link>

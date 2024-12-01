@@ -4,7 +4,7 @@ import CustomButton from "../ui/CustomButton";
 
 const HeaderLeft = () => {
   return (
-    <div className="w-full h-screen flex flex-col justify-start items-center top-36 relative gap-4 z-30  ">
+    <div className="w-full flex flex-col justify-start items-center top-36 relative gap-4 z-30  ">
       <div className="flex flex-col gap-2 justify-center items-center">
         <h1 className="text-h10 md:text-h5 tracking-wider animated-gradient-text text-white">
           Mystic Paradise
