@@ -18,8 +18,54 @@ const pinyon = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Mystic Paradise Studio",
-  description: "Studio webcam en Bogotá, trabaja con nosotros.",
+  title: "Modelos Bogotá - Modelos Webcam en Bogotá",
+  description:
+    "Modelos profesionales y modelos webcam en Bogotá. Encuentra las mejores modelos para sesiones fotográficas, eventos y contenido online.",
+  keywords: [
+    "modelos bogotá",
+    "modelos webcam bogotá",
+    "modelos profesionales",
+    "casting modelos",
+    "agencia de modelos",
+    "modelos colombianas",
+  ],
+  openGraph: {
+    title: "Modelos Bogotá - Modelos Webcam",
+    description:
+      "Descubre las mejores modelos de Bogotá para diferentes tipos de proyectos y plataformas.",
+    type: "website",
+    locale: "es_CO",
+    url: "https://www.mysticparadise.top/",
+    siteName: "Modelos Bogotá",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Modelos Bogotá - Directorio Profesional",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Modelos Bogotá - Modelos Webcam",
+    description: "Encuentra modelos profesionales en Bogotá",
+    images: ["/logo.png"],
+  },
+  alternates: {
+    canonical: "https://www.mysticparadise.top/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
