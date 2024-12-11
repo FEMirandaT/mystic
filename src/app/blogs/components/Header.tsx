@@ -7,7 +7,7 @@ interface Props {
 }
 export const Header = ({ title, image, subtitle }: Props) => {
   return (
-    <div className="md:pt-40 h-[80dvh] w-dvw max-w-mw-container flex flex-col md:flex-row">
+    <div className="md:pt-40 h-[80dvh] w-full md:max-w-mw-container flex flex-col md:flex-row">
       <div className="w-full h-full flex flex-col justify-center items-center md:items-start">
         <figure className="absolute -bottom-20 -left-[500px] opacity-40 pointer-events-none ">
           <Image

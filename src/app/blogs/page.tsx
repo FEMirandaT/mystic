@@ -4,7 +4,7 @@ import { BlogCard } from "./components";
 
 const BlogsPage = () => {
   return (
-    <section className="top-40 relative flex flex-col gap-10 px-2">
+    <section className="top-40 relative w-full flex flex-col gap-10 px-2">
       <div className="flex flex-col gap-2">
         <h1 className="text-gold text-2xl md:text-5xl">
           La mejor información si quieres ser{" "}

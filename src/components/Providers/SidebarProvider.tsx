@@ -9,6 +9,7 @@ import {
   useContext,
   useState,
 } from "react";
+import { Sidebar } from "../Sidebar";
 
 interface SidebarContextProps {
   setSidebarOpen: Dispatch<boolean>;
@@ -42,6 +43,7 @@ export const SidebarProvider: FC<SidebarProviderProps> = ({ children }) => {
       }}
     >
       {children}
+      <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
     </SidebarContext.Provider>
   );
 };

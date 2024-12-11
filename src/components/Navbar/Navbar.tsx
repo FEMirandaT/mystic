@@ -7,7 +7,6 @@ import Link from "next/link";
 import { NavbarItems } from ".";
 import { MenuIcon } from "../icons";
 import { useSidebar } from "../Providers/SidebarProvider";
-import { Sidebar } from "../Sidebar";
 
 export const Navbar = () => {
   const lenis = useLenis(({ scroll }) => {});
@@ -44,7 +43,6 @@ export const Navbar = () => {
       >
         <MenuIcon color={COLORS.primary} size={36} />
       </button>
-      <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
     </nav>
   );
 };
