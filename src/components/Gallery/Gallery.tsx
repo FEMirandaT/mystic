@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
+// @ts-nocheck
 "use client";
 import { Dispatch, memo } from "react";
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";

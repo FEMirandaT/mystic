@@ -13,7 +13,7 @@ export const SidebarLinks = () => {
       {NAVBAR_LINKS.map((item) => (
         <li className="px-2 py-5 group list-none" key={item.id}>
           <Link
-            href={`#${item.id}`}
+            href={item.title === "Blogs" ? "/blogs" : `#${item.id}`}
             className="flex gap-1 items-start text-h5"
             aria-label={`links to section ${item.title}`}
             onClick={() => {

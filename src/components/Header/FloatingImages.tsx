@@ -50,9 +50,6 @@ const FloatingImages = () => {
               opacity: 1,
               scale: 3.5,
             }}
-            whileHoverTransition={{
-              ease: "easeOut",
-            }}
           >
             <Image
               src={image}
