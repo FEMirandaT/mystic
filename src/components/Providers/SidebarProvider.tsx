@@ -28,6 +28,8 @@ export const SidebarProvider: FC<SidebarProviderProps> = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = useState<boolean>(false);
 
   const toggleSidebar = useCallback(() => {
+    console.log("toggle");
+
     setSidebarOpen((prevSidebarState) => !prevSidebarState);
   }, []);
 

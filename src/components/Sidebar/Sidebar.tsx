@@ -27,10 +27,10 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
   }, [isMobile, setSidebarOpen]);
 
   return (
-    <div
-      className={`fixed lg:hidden top-0 right-0 h-full w-full flex flex-col justify-start transform transition-transform duration-300 ease-in-out z-50 glass-extra-strong ${
+    <nav
+      className={`fixed lg:hidden top-0 right-0  w-screen h-dvh flex flex-col justify-start transform transition-transform duration-300 ease-in-out z-50 glass-extra-strong-sidebar ${
         isSidebarOpen ? "translate-x-0" : "translate-x-full"
-      } z-30 px-4 pt-108 pb-6`}
+      } z-40 px-4 pt-108 pb-6`}
     >
       <header className="w-full">
         <IconButton
@@ -59,6 +59,6 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
       >
         Desarrollado por FMirandaDev
       </Link>
-    </div>
+    </nav>
   );
 };

@@ -39,7 +39,7 @@ const BlogPage = async ({ params }: { params: Promise<{ blog: string }> }) => {
                 key={index}
                 className="text-2xl md:text-3xl font-semibold mb-4 text-start text-white"
               >
-                <span className="inline-block text-gradient bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
+                <span className="inline-block text-gradient bg-gradient-to-r from-yellow-400 via-neutral-200 to-yellow-500 bg-clip-text text-transparent">
                   {section.text}
                 </span>
               </HeadingTag>

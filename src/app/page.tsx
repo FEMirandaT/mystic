@@ -5,13 +5,10 @@ import { Footer } from "@/components/Footer";
 import GallerySection from "@/components/Gallery/GallerySection";
 import Header from "@/components/Header/Header";
 import { WhatsappIcon } from "@/components/icons";
-import { useSidebar } from "@/components/Providers/SidebarProvider";
-import { Sidebar } from "@/components/Sidebar";
 import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
 
 export default function Home() {
-  const { isSidebarOpen, setSidebarOpen } = useSidebar();
   return (
     <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat overflow-x-hidden relative font-prata">
       <Header />
@@ -50,8 +47,6 @@ export default function Home() {
         <WhatsappIcon color={COLORS.white} size={36} />
         {/* <span className="text-white text-lg font-semibold">¡Escríbenos!</span> */}
       </motion.a>
-
-      <Sidebar isSidebarOpen={isSidebarOpen} setSidebarOpen={setSidebarOpen} />
     </div>
   );
 }
