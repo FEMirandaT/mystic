@@ -292,7 +292,7 @@ export const ARTICLES: Article[] = [
     subtitle:
       "Descubre los pasos y estrategias para iniciar tu carrera en el mundo del modelaje web",
     image: "/header/blog5.webp",
-    slug: "como-ser-modelo-webcam",
+    slug: "modelo-webcam-estudio-o-indepnediente",
     content: [
       {
         type: "paragraph",
