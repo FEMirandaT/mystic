@@ -14,7 +14,7 @@ const BlogsPage = () => {
           Encuentra los mejores consejos
         </h2>
       </div>
-      <div className="flex gap-8 justify-between flex-wrap px-2">
+      <div className="flex gap-8 justify-center flex-wrap px-2">
         {ARTICLES.map((ar) => (
           <BlogCard article={ar} key={ar.id} />
         ))}
