@@ -28,7 +28,7 @@ export const SOCIAL_NETWORKS = [
 const ContactSection = () => {
   return (
     <section
-      className="pt-12 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
+      className="pt-60 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
       id="contact"
     >
       <h2 className="text-h10 md:text-h5 animated-gradient-text">

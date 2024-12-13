@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     siteName: "Modelos Bogotá",
     images: [
       {
-        url: "/logo.png",
+        url: "/logov2.png",
         width: 1200,
         height: 630,
         alt: "Modelos Bogotá - Directorio Profesional",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Modelos Bogotá - Modelos Webcam",
     description: "Encuentra modelos profesionales en Bogotá",
-    images: ["/logo.png"],
+    images: ["/logov2.png"],
   },
   alternates: {
     canonical: "https://www.mysticparadise.top/",

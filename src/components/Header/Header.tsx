@@ -8,30 +8,11 @@ import HeaderRight from "./HeaderRight";
 import HeaderRightAnimated from "./HeaderRightAnimated";
 
 const Header = () => {
-  // const [isDialogOpen, setIsDialogOpen] = useState(false);
   const { isMobile } = useResponsive();
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIsDialogOpen(true);
-  //   }, 200);
-
-  //   return () => {};
-  // }, []);
   return (
     <header className="w-screen h-screen z-0 relative font-prata" id="header">
       <div className="flex flex-col h-full items-center justify-between">
-        {/* <CustomDialog isOpen={isDialogOpen} onOpenChange={setIsDialogOpen}>
-          <video
-            src="/modal.mp4"
-            id="modal-video"
-            className="w-full max-h-[80vh] object-contain object-top rounded-lg"
-            autoPlay
-            muted
-            controls
-            onEnded={() => setIsDialogOpen(false)}
-          />
-        </CustomDialog> */}
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"
@@ -51,7 +32,9 @@ const Header = () => {
           />
         </figure>
         <HeaderLeft />
-        {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
+        <div className="w-full relative top-20">
+          {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
+        </div>
         <FloatingImages />
       </div>
     </header>

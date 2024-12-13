@@ -44,7 +44,7 @@ export const Footer = () => {
               aria-label="hom button with logo"
             >
               <Image
-                src={"/logo.png"}
+                src={"/logov2.png"}
                 sizes="(max-width: 750px) 50vw, 25vw"
                 alt=""
                 quality={100}

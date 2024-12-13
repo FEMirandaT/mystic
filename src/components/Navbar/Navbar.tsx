@@ -23,7 +23,7 @@ export const Navbar = () => {
         aria-label="hom button with logo"
       >
         <Image
-          src={"/logo.png"}
+          src={"/logov2.png"}
           alt=""
           quality={100}
           className="w-15 md:w-108 z-20"

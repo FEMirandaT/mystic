@@ -27,7 +27,7 @@ const HeaderRightAnimated = () => {
       style={{ scale, opacity }}
       onAnimationEnd={() => setIsVisible(false)}
     >
-      <ImageBlurFrame height={800} width={550} image="/header/woman.png" />
+      <ImageBlurFrame image="/header/womanv2.png" />
     </motion.div>
   );
 };
