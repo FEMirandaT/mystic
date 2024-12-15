@@ -4,9 +4,7 @@ import { ImageBlurFrame } from "../Reusables";
 
 const HeaderRight = () => {
   return (
-    <div
-      className={clsx("flex justify-center w-full pointer-events-none", "flex")}
-    >
+    <div className={clsx("flex justify-center w-full pointer-events-none")}>
       <ImageBlurFrame image="/header/womanv2.png" />
     </div>
   );

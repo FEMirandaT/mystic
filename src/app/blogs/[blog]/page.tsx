@@ -1,15 +1,43 @@
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Header } from "../components/Header";
 import { ARTICLES } from "./articles";
 
-export async function generateStaticParams() {
-  return ARTICLES.map((article) => ({
-    blog: article.slug,
-  }));
+type Props = {
+  params: Promise<{ blog: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { blog } = await params;
+  const article = ARTICLES.find((a) => a.slug === blog);
+
+  if (!article) {
+    return {
+      title: "Article Not Found",
+      description: "The requested article does not exist.",
+    };
+  }
+
+  return {
+    title: article.title,
+    description: article.subtitle,
+    openGraph: {
+      title: article.title,
+      description: article.subtitle,
+      images: [article.image],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.subtitle,
+      images: [article.image],
+    },
+  };
 }
 
-const BlogPage = async ({ params }: { params: Promise<{ blog: string }> }) => {
-  const blog = (await params).blog;
+const BlogPage = async ({ params }: Props) => {
+  const { blog } = await params;
   const article = ARTICLES.find((a) => a.slug === blog);
   if (!article) {
     notFound();
@@ -22,7 +50,6 @@ const BlogPage = async ({ params }: { params: Promise<{ blog: string }> }) => {
         image={article.image}
         subtitle={article.subtitle}
       />
-
       <div className="flex flex-col gap-8 w-full max-w-wrapper items-start leading-relaxed text-neutral-300">
         {article.content.map((section, index) => {
           if (section.type === "paragraph") {
