@@ -15,12 +15,12 @@ export default function Home() {
       <ContactSection />
       <div className="flex flex-col items-center my-10 md:my-20">
         <h2 className="text-h10 md:text-h5 animated-gradient-text ">
-          Nuestra sede
+          Nuestra sede en Bogotá
         </h2>
-        <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold">
+        <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold leading-tight">
           Estamos ubicados en el barrio El Galán
         </p>
-        <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold">
+        <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold leading-tight">
           Cerca a la Estación Pradera y Outlet de las Américas
         </p>
       </div>
