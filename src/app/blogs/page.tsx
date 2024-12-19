@@ -2,6 +2,39 @@
 import { ARTICLES } from "./[blog]/articles";
 import { BlogCard } from "./components";
 
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "La mejor información si quieres ser modelo webcam",
+  description:
+    "Encuentra los mejores consejos para convertirte en una modelo webcam exitosa.",
+  alternates: {
+    canonical: "https://www.mysticparadise.top/blogs",
+  },
+  openGraph: {
+    title: "La mejor información si quieres ser modelo webcam",
+    description:
+      "Encuentra los mejores consejos para convertirte en una modelo webcam exitosa.",
+    url: "https://www.mysticparadise.top/blogs",
+    images: [
+      {
+        url: "https://www.mysticparadise.top/header.png",
+        width: 800,
+        height: 600,
+        alt: "Modelos Webcam en Bogotá",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "La mejor información si quieres ser modelo webcam",
+    description:
+      "Encuentra los mejores consejos para convertirte en una modelo webcam exitosa.",
+    images: ["https://www.mysticparadise.top/header.png"],
+  },
+};
+
 const BlogsPage = () => {
   return (
     <section className="top-40 relative w-full flex flex-col gap-10 px-2">

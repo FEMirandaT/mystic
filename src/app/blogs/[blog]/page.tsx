@@ -10,6 +10,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { blog } = await params;
   const article = ARTICLES.find((a) => a.slug === blog);
+  const canonicalUrl = `https://mysticparadise.top/blogs/${blog}`;
 
   if (!article) {
     return {
@@ -21,6 +22,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: article.title,
     description: article.subtitle,
+    alternates: { canonical: canonicalUrl },
     openGraph: {
       title: article.title,
       description: article.subtitle,
