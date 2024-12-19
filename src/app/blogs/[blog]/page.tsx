@@ -10,7 +10,7 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { blog } = await params;
   const article = ARTICLES.find((a) => a.slug === blog);
-  const canonicalUrl = `https://mysticparadise.top/blogs/${blog}`;
+  const canonicalUrl = `https://www.mysticparadise.top/blogs/${blog}`;
 
   if (!article) {
     return {

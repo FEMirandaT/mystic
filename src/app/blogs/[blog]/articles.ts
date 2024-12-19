@@ -2,6 +2,7 @@ export interface Article {
   id: string;
   title: string;
   subtitle: string;
+  description: string;
   image: string;
   slug: string;
   content: Content[];
@@ -19,6 +20,8 @@ export const ARTICLES: Article[] = [
   {
     id: "1",
     title: "Beneficios de trabajar como modelo webcam",
+    description:
+      "Explora los beneficios del modelaje webcam: flexibilidad horaria, ingresos atractivos, autonomía laboral y crecimiento profesional. Conoce cómo esta carrera puede transformar tu vida laboral.",
     subtitle:
       "Descubre las ventajas de una carrera flexible, autónoma y rentable",
     image: "/header/blog2.webp",
@@ -100,6 +103,8 @@ export const ARTICLES: Article[] = [
   {
     id: "2",
     title: "Consejos para ser una modelo webcam exitosa",
+    description:
+      "Descubre las estrategias probadas para triunfar como modelo webcam: desde la gestión del tiempo hasta técnicas de interacción con usuarios. Guía completa para maximizar tus ingresos.",
     subtitle:
       "10 estrategias clave para destacar en el mundo del modelaje online",
     image: "/header/red-dress.webp",
@@ -159,6 +164,8 @@ export const ARTICLES: Article[] = [
   {
     id: "3",
     title: "¿Cuánto puede ganar una modelo webcam en Colombia?",
+    description:
+      "Análisis detallado de los ingresos potenciales como modelo webcam en Colombia: desde ganancias promedio hasta casos de éxito. Incluye factores clave para maximizar tus ingresos.",
     subtitle:
       "Descubre las cifras, factores clave y el potencial de ingresos en la industria del modelaje webcam",
     image: "/header/blog3.webp",
@@ -231,6 +238,8 @@ export const ARTICLES: Article[] = [
   {
     id: "4",
     title: "¿Cuántas horas necesita trabajar una modelo webcam?",
+    description:
+      "Guía completa sobre la organización del tiempo en el modelaje webcam: horarios óptimos, estrategias de productividad y balance trabajo-vida para alcanzar ingresos de $2.800.000 semanales.",
     subtitle:
       "Entiende cuántas horas al día, a la semana y al mes podrías dedicar para lograr este ingreso",
     image: "/header/blog4.webp",
@@ -289,6 +298,8 @@ export const ARTICLES: Article[] = [
   {
     id: "5",
     title: "Modelo webcam: Estudio o independiente",
+    description:
+      "Análisis comparativo entre trabajar en un estudio profesional o de forma independiente como modelo webcam. Conoce las ventajas, inversiones necesarias y factores clave para decidir.",
     subtitle:
       "Descubre los pasos y estrategias para iniciar tu carrera en el mundo del modelaje web",
     image: "/header/blog5.webp",
@@ -368,6 +379,8 @@ export const ARTICLES: Article[] = [
   {
     id: "2",
     title: "Cómo ser modelo webcam",
+    description:
+      "Guía paso a paso para iniciar tu carrera como modelo webcam: requisitos, equipo necesario, consejos de profesionales y estrategias probadas para destacar en la industria.",
     subtitle:
       "Descubre los pasos esenciales para destacar en la industria del modelaje webcam",
     image: "/header/blog6.webp",
