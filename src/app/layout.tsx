@@ -18,9 +18,9 @@ const pinyon = Pinyon_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Modelos Bogotá - Modelos Webcam en Bogotá",
+  title: "Modelos Bogotá - Estudio Webcam en Bogotá",
   description:
-    "Modelos profesionales y modelos webcam en Bogotá. Encuentra las mejores modelos para sesiones fotográficas, eventos y contenido online.",
+    "Estudio en Webcam en Bogotá. Ofrece las mejores transmisiones en vivo con modelos profesionales.",
   keywords: [
     "modelos bogotá",
     "modelos webcam bogotá",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     "modelos colombianas",
   ],
   openGraph: {
-    title: "Modelos Bogotá - Modelos Webcam",
+    title: "Modelos Bogotá - Estudio Webcam",
     description:
-      "Descubre las mejores modelos de Bogotá para diferentes tipos de proyectos y plataformas.",
+      "Estudio en Webcam en Bogotá. Ofrece las mejores transmisiones en vivo con modelos profesionales.",
     type: "website",
     locale: "es_CO",
     url: "https://www.mysticparadise.top/",
@@ -42,13 +42,13 @@ export const metadata: Metadata = {
         url: "/logov2.png",
         width: 1200,
         height: 630,
-        alt: "Modelos Bogotá - Directorio Profesional",
+        alt: "Modelos Bogotá - Estudio Webcam",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Modelos Bogotá - Modelos Webcam",
+    title: "Modelos Bogotá - Estudio Webcam",
     description: "Encuentra modelos profesionales en Bogotá",
     images: ["/logov2.png"],
   },
