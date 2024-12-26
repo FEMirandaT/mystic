@@ -19,8 +19,88 @@ type ContentType = "heading" | "paragraph";
 
 export const ARTICLES: Article[] = [
   {
+    id: "7",
+    title: "¿Qué es ser modelo webcam?",
+    description:
+      "Descubre qué es ser modelo webcam: requisitos, ingresos potenciales y habilidades necesarias para tener éxito en la industria del entretenimiento en línea.",
+    subtitle: "Una guía completa sobre la profesión del modelaje webcam",
+    image: "/header/blog7.webp",
+    slug: "que-es-ser-modelo-webcam",
+    titleSeo:
+      "Qué es ser modelo webcam: Todo lo que necesitas saber sobre esta profesión",
+    content: [
+      {
+        type: "paragraph",
+        text: "El modelaje webcam es una profesión del entretenimiento para adultos que se desarrolla completamente en línea. Si estás considerando esta carrera, es importante entender todos sus aspectos para tomar una decisión informada.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "¿Qué hace exactamente un modelo webcam?",
+      },
+      {
+        type: "paragraph",
+        text: "Un modelo webcam es un profesional que realiza transmisiones en vivo por internet. Su trabajo implica interactuar con usuarios en tiempo real, crear contenido entretenido y desarrollar una presencia única en línea. Todo el trabajo es virtual, sin contacto físico con los usuarios.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Requisitos y características necesarias",
+      },
+      {
+        type: "paragraph",
+        text: "Contrario a lo que muchos piensan, no existen requisitos físicos específicos para esta profesión. Lo importante es ser mayor de edad, tener una personalidad extrovertida y sentirse seguro de uno mismo. Las características más valoradas son la capacidad de comunicación, la creatividad y el profesionalismo.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Habilidades profesionales importantes",
+      },
+      {
+        type: "paragraph",
+        text: "El éxito en esta industria requiere desarrollar varias habilidades clave. Es fundamental tener buenas capacidades de comunicación, saber mantener conversaciones interesantes y ser capaz de crear conexiones auténticas con los usuarios. La creatividad para desarrollar un personaje único también es muy valorada.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Potencial de ingresos",
+      },
+      {
+        type: "paragraph",
+        text: "Los ingresos varían según la experiencia y dedicación. Los principiantes pueden ganar entre 1.850.000 y 2.000.000 pesos quincenales. Con experiencia, los ingresos pueden aumentar considerablemente.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Aspectos importantes a considerar",
+      },
+      {
+        type: "paragraph",
+        text: "En esta profesión, tú estableces tus propios límites y reglas. Es fundamental trabajar con estudios o empresas establecidas que proporcionen capacitación y apoyo adecuado. El éxito requiere constancia, disciplina y una actitud profesional hacia el trabajo.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "Desarrollo profesional",
+      },
+      {
+        type: "paragraph",
+        text: "Como en cualquier carrera, el crecimiento profesional depende de tu dedicación y compromiso. Es importante mantener una actitud de aprendizaje continuo, desarrollar estrategias de marketing personal y construir una base de seguidores leales.",
+      },
+      {
+        type: "heading",
+        level: 2,
+        text: "¿Cómo empezar?",
+      },
+      {
+        type: "paragraph",
+        text: "Si estás interesado en iniciar en esta industria, el primer paso es contactar con un estudio profesional que pueda guiarte en el proceso. Ellos te proporcionarán la capacitación necesaria y te ayudarán a desarrollar tus habilidades de manera segura y profesional.",
+      },
+    ],
+  },
+  {
     id: "1",
-    title: "ventajas de trabajar como modelo webcam",
+    title: "Ventajas de trabajar como modelo webcam",
     description:
       "Descubre los ventajas del modelaje webcam: flexibilidad, autonomía y buenos ingresos.",
     subtitle:
@@ -168,7 +248,7 @@ export const ARTICLES: Article[] = [
     id: "3",
     title: "¿Cuánto puede ganar una modelo webcam en Colombia?",
     description:
-      "Descubre las ganancias promedio y factores clave para modelos webcam en Colombia.",
+      "Descubre cuanto gana en promedio y factores clave para modelos webcam en Colombia.",
     subtitle:
       "Descubre las cifras, factores clave y el potencial de ingresos en la industria",
     image: "/header/blog3.webp",
@@ -243,7 +323,7 @@ export const ARTICLES: Article[] = [
     id: "4",
     title: "¿Cuántas horas necesita trabajar una modelo webcam?",
     description:
-      "Conoce las horas necesarias para alcanzar ingresos de $2.800.000 semanales como modelo webcam.",
+      "Conoce cuantas horas trabajar para alcanzar excelentes ingresos como modelo webcam.",
     subtitle: "Entiende cuántas horas podrías dedicar para lograr este ingreso",
     image: "/header/blog4.webp",
     slug: "horas-de-trabajo-modelo-webcam",
@@ -385,7 +465,7 @@ export const ARTICLES: Article[] = [
     id: "6",
     title: "Cómo ser modelo webcam",
     description:
-      "Guía paso a paso para ser modelo webcam: requisitos, equipo y estrategias de éxito.",
+      "Guía paso a paso de como ser modelo webcam: requisitos, equipo y estrategias de éxito.",
     subtitle: "Descubre los pasos esenciales para destacar en la industria",
     image: "/header/blog6.webp",
     slug: "como-ser-modelo-webcam",
