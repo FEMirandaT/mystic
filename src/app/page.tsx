@@ -23,6 +23,9 @@ export default function Home() {
         <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold leading-tight">
           Cerca a la Estación Pradera y Outlet de las Américas
         </p>
+        <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold leading-tight">
+          Trabaja con nosotros
+        </p>
       </div>
       <GallerySection />
       <AboutUs />

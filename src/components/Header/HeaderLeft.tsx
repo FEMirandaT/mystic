@@ -7,14 +7,12 @@ const HeaderLeft = () => {
     <div className="w-full flex flex-col justify-start items-center top-20 md:top-36 relative gap-4 z-30 mb-5">
       <div className="flex flex-col gap-2 justify-center items-center">
         <div className="flex flex-col justify-center items-center text-h10 md:text-h5 tracking-wider animated-gradient-text">
-          <h2 className="">
+          <h1 className="">
             Mystic Paradise <br />
-          </h2>
-          <h1>Estudio Webcam</h1>
+            Estudio Webcam
+          </h1>
         </div>
-        {/* <h1 className="text-h5 tracking-wider animated-gradient-text">
-          Estudio Webcam
-        </h1> */}
+
         <TypeAnimation
           className="animated-gradient-text"
           sequence={[
