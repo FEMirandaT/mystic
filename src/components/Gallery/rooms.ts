@@ -18,6 +18,6 @@ export const ROOMS = [
   { url: `${basePathImageRooms}/15.webp`, id: 15 },
   { url: `${basePathImageRooms}/16.webp`, id: 16 },
   { url: `${basePathImageRooms}/17.webp`, id: 17 },
-  { url: `${basePathImageRooms}/18.webp`, id: 22 },
-  { url: `${basePathImageRooms}/19.webp`, id: 23 },
+  // { url: `${basePathImageRooms}/18.webp`, id: 22 },
+  // { url: `${basePathImageRooms}/19.webp`, id: 23 },
 ];

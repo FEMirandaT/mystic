@@ -32,7 +32,7 @@ const Header = () => {
           />
         </figure>
         <HeaderLeft />
-        <div className="w-full relative top-20">
+        <div className="w-full relative top-10 md:top-20 ">
           {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
         </div>
         <FloatingImages />

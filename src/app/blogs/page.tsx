@@ -1,8 +1,8 @@
 "use cllient";
-import { ARTICLES } from "./[blog]/articles";
-import { BlogCard } from "./components";
 
 import { Metadata } from "next";
+import { ARTICLES } from "./[blog]/articles";
+import { BlogCard } from "./components";
 
 export const metadata: Metadata = {
   title: "La mejor información si quieres ser modelo webcam",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 const BlogsPage = () => {
   return (
-    <section className="top-40 relative w-full flex flex-col gap-10 px-2">
+    <section className=" top-28 md:top-40 relative w-full flex flex-col gap-10 px-2 max-w-7xl">
       <div className="flex flex-col gap-2">
         <h1 className="text-gold text-2xl md:text-5xl">
           La mejor información si quieres ser{" "}
