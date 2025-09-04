@@ -1,11 +1,12 @@
 "use client";
+
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 const GALLERY_IMAGE_HEADER = [
   "/rooms/1.webp",
-  "/rooms/2.webp",
-  "/rooms/3.webp",
+  "/rooms/2(1).webp",
+  "/rooms/3(1).webp",
   "/rooms/4.webp",
   "/rooms/5.webp",
   "/rooms/6.webp",

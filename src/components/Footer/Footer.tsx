@@ -4,12 +4,11 @@
 import { useEffect, useState } from "react";
 
 import { COLORS } from "@/utils/colors";
+import { useLenis } from "@studio-freight/react-lenis";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
 import { SOCIAL_NETWORKS } from "../Contact/ContactSection";
 import { WhatsappIcon } from "../icons";
-import { motion } from "framer-motion";
-import { useLenis } from "@studio-freight/react-lenis";
 
 const images = [
   "/header/woman.webp",
@@ -98,12 +97,14 @@ export const Footer = () => {
               © Copyright {new Date().getFullYear()} — &quot;Todos los derechos
               reservados&quot;
             </p>
-            <Link
-              href="www.fmiranda.com"
+            <a
+              href="https://www.mirandadev.com"
               className="text-xs text-center text-primary underline"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Desarrollado por FMirandaDev
-            </Link>
+            </a>
           </div>
         </div>
 
