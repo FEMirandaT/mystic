@@ -1,17 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
+import { useEffect, useState } from "react";
+
 import { COLORS } from "@/utils/colors";
-import { useLenis } from "@studio-freight/react-lenis";
-import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
 import { SOCIAL_NETWORKS } from "../Contact/ContactSection";
 import { WhatsappIcon } from "../icons";
+import { motion } from "framer-motion";
+import { useLenis } from "@studio-freight/react-lenis";
 
 const images = [
-  "/header/woman.png",
+  "/header/woman.webp",
   "/header/woman2.png",
   "/header/woman3.png",
 ];
@@ -94,7 +95,8 @@ export const Footer = () => {
           </div>
           <div className="flex flex-col items-center gap-1">
             <p className="l1 text-p-2 text-center text-primary">
-              © Copyright 2024 — &quot;Todos los derechos reservados&quot;
+              © Copyright {new Date().getFullYear()} — &quot;Todos los derechos
+              reservados&quot;
             </p>
             <Link
               href="www.fmiranda.com"

@@ -1,11 +1,12 @@
 "use client";
+
 import { AboutUs } from "@/components/AboutUs";
+import { COLORS } from "@/utils/colors";
 import { ContactSection } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import GallerySection from "@/components/Gallery/GallerySection";
 import Header from "@/components/Header/Header";
 import { WhatsappIcon } from "@/components/icons";
-import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
 
 export default function Home() {
@@ -13,8 +14,8 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-screen w-full bg-bgWhite2 dark:bg-header4 bg-cover object-center bg-no-repeat overflow-x-hidden relative font-prata">
       <Header />
       <ContactSection />
-      <div className="flex flex-col items-center my-10 md:my-20">
-        <h2 className="text-h10 md:text-h5 animated-gradient-text ">
+      <div className="flex flex-col items-center my-10 md:my-20 mt-24">
+        <h2 className="text-h10 md:text-h5 animated-gradient-text  text-center">
           Nuestra sede en Bogotá
         </h2>
         <p className="text-lg md:text-h2.5 animated-gradient-text text-center font-bold leading-tight">
@@ -45,10 +46,9 @@ export default function Home() {
           repeat: Infinity,
           repeatType: "loop",
         }}
-        className="fixed flex gap-1 items-center bottom-10 right-5 md:bottom-20 md:right-10 bg-primarydarkest px-2 py-2 rounded-full shadow-2xl z-40"
+        className="fixed flex gap-1 items-center bottom-10 right-5 md:bottom-20 md:right-10 bg-green-700 px-2 py-2 rounded-full shadow-2xl z-40"
       >
-        <WhatsappIcon color={COLORS.white} size={36} />
-        {/* <span className="text-white text-lg font-semibold">¡Escríbenos!</span> */}
+        <WhatsappIcon color={COLORS.white} size={48} />
       </motion.a>
     </div>
   );

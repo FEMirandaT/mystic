@@ -1,6 +1,6 @@
+import CustomButton from "../ui/CustomButton";
 import { TypeAnimation } from "react-type-animation";
 import { WhatsappIcon } from "../icons";
-import CustomButton from "../ui/CustomButton";
 
 const HeaderLeft = () => {
   return (
@@ -43,7 +43,7 @@ const HeaderLeft = () => {
         title="Contáctanos"
         onClick={() =>
           window.open(
-            "https://wa.me/+573027557903?text=Hola!%20Quisiera%20más%20información.",
+            "https://wa.me/+573045553476?text=Hola!%20Quisiera%20más%20información.",
             "_blank"
           )
         }

@@ -1,9 +1,10 @@
 "use client";
+
 import { COLORS } from "@/utils/colors";
+import { CameraIcon } from "../icons";
+import Image from "next/image";
 import clsx from "clsx";
 import { motion } from "motion/react";
-import Image from "next/image";
-import { CameraIcon } from "../icons";
 
 const BENEFICIOS = [
   {
@@ -78,7 +79,7 @@ export const AboutUs = () => {
         />
       </figure>
       <div className="flex flex-col md:flex-row gap-8">
-        <div className="flex flex-1 justify-start items-start">
+        <div className="flex flex-1 justify-center md:justify-start items-start">
           <h2 className="text-primary text-h10 md:text-h5 leading-[0.9]">
             ¿Por qué <br />
             <p className="text-gold">nosotros?</p>

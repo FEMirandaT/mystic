@@ -1,10 +1,13 @@
-import { LenisProvider } from "@/components/LenisProvider";
-import { Navbar } from "@/components/Navbar";
-import { ThemeProvider } from "@/components/Providers";
-import { SidebarProvider } from "@/components/Providers/SidebarProvider";
-import type { Metadata } from "next";
-import { Pinyon_Script, Prata } from "next/font/google";
 import "./globals.css";
+
+import { Pinyon_Script, Prata } from "next/font/google";
+
+import { LenisProvider } from "@/components/LenisProvider";
+import type { Metadata } from "next";
+import { Navbar } from "@/components/Navbar";
+import Script from "next/script";
+import { SidebarProvider } from "@/components/Providers/SidebarProvider";
+import { ThemeProvider } from "@/components/Providers";
 
 const prata = Prata({
   subsets: ["latin"],
@@ -22,17 +25,34 @@ export const metadata: Metadata = {
   description:
     "Estudio en Webcam en Bogotá. Ofrece las mejores transmisiones en vivo con modelos profesionales.",
   keywords: [
-    "modelos bogotá",
-    "modelos webcam bogotá",
-    "modelos profesionales",
-    "casting modelos",
-    "agencia de modelos",
-    "modelos colombianas",
+    "modelo webcam bogotá",
+    "trabajo webcam bogotá",
+    "empleo webcam bogotá",
+    "vacantes modelo webcam bogotá",
+    "reclutamiento modelo webcam bogotá",
+    "estudio webcam bogotá",
+    "casting modelo webcam bogotá",
+    "trabajo desde casa webcam bogotá",
+    "webcam bogotá sin experiencia",
+    "ingresos modelo webcam bogotá",
+    "ganancias webcam bogotá",
+    "estudios webcam bogotá",
+    "trabajo webcam parejas bogotá",
+    "modelo webcam parejas bogotá",
+    "trabajo webcam mujeres bogotá",
+    "trabajo webcam chicas bogotá",
+    "webcam bogotá independiente",
+    "webcam bogotá seguro",
+    "requisitos modelo webcam bogotá",
+    "entrevista modelo webcam bogotá",
+    "capacitación webcam bogotá",
+    "oferta trabajo webcam bogotá",
+    "trabajo webcam trans bogotá",
   ],
   openGraph: {
-    title: "Modelos Bogotá - Estudio Webcam",
+    title: "Modelos Bogotá - Estudio Webcam y Oportunidades de Trabajo",
     description:
-      "Estudio en Webcam en Bogotá. Ofrece las mejores transmisiones en vivo con modelos profesionales.",
+      "Estudio en Webcam en Bogotá. Ofrecemos las mejores transmisiones en vivo con modelos profesionales y oportunidades de trabajo para modelos en Bogotá.",
     type: "website",
     locale: "es_CO",
     url: "https://www.mysticparadise.top/",
@@ -49,7 +69,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Modelos Bogotá - Estudio Webcam",
-    description: "Encuentra modelos profesionales en Bogotá",
+    description:
+      "Encuentra modelos profesionales en Bogotá y descubre oportunidades de trabajo para modelos",
     images: ["/logov2.png"],
   },
   alternates: {
@@ -88,6 +109,27 @@ export default function RootLayout({
           content={"#0e0e0e"}
         />
       </head>
+      {/* Google Tag (gtag.js) */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${
+          process.env.NEXT_PUBLIC_GTAG_AW ?? "AW-17526687912"
+        }`}
+        strategy="afterInteractive"
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);} 
+            gtag('js', new Date());
+            gtag('config', '${
+              process.env.NEXT_PUBLIC_GTAG_AW ?? "AW-17526687912"
+            }');
+          `,
+        }}
+      />
       <LenisProvider isRoot>
         <body
           className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1`}

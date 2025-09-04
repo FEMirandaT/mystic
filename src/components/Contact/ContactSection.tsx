@@ -1,9 +1,11 @@
 "use client";
+
+import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons";
+
 import { COLORS } from "@/utils/colors";
-import { motion } from "motion/react";
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
-import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons";
+import { motion } from "motion/react";
 
 export const SOCIAL_NETWORKS = [
   {
@@ -40,7 +42,7 @@ const ContactSection = () => {
           backgroundColor: "transparent",
           border: "4px solid transparent",
           borderImage:
-            "linear-gradient(to bottom, #4f830033, #90c048,#e2ffb622) 1",
+            "linear-gradient(to bottom, #ffeb44, #90c048, #ffeb4488) 1",
         }}
       >
         <figure className="absolute -bottom-[800px] -right-[800px] opacity-40 pointer-events-none ">
