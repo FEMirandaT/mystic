@@ -1,12 +1,12 @@
 "use client";
 
 import { AboutUs } from "@/components/AboutUs";
-import { COLORS } from "@/utils/colors";
 import { ContactSection } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 import GallerySection from "@/components/Gallery/GallerySection";
 import Header from "@/components/Header/Header";
 import { WhatsappIcon } from "@/components/icons";
+import { COLORS } from "@/utils/colors";
 import { motion } from "motion/react";
 
 export default function Home() {
@@ -33,8 +33,8 @@ export default function Home() {
       <Footer />
 
       <motion.a
-        href="https://wa.me/+573027557903 "
-        aria-label="whatasapp icon that takes you to the whatsapp aplication"
+        href="https://wa.me/+573045553476"
+        aria-label="whatsapp icon that takes you to the whatsapp application"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.2 }}
