@@ -6,7 +6,6 @@ import {
   Camera,
   Coffee,
   CreditCard,
-  Gift,
   MapPin,
   Star,
   Trophy,
@@ -52,11 +51,7 @@ const BENEFICIOS = [
     text: "Asesoría en imagen y marketing personal para potenciar tu éxito",
     isPayment: false,
   },
-  {
-    id: 8,
-    text: "Bonos especiales por cumplimiento de metas y trabajo en equipo",
-    isPayment: true,
-  },
+
   {
     id: 9,
     text: "Fotografías profesionales mensuales",
@@ -77,9 +72,6 @@ const OTROS_BENEFICIOS = [
     isPayment: true,
     icon: Truck,
   },
-  { id: 3, text: "Gran premio Anual", isPayment: true, icon: Trophy },
-  { id: 4, text: "Premio Mensual", isPayment: true, icon: Gift },
-  { id: 5, text: "Bonos semanales", isPayment: true, icon: CreditCard },
   { id: 6, text: "Habitaciones de Lujo", isPayment: false, icon: Star },
   { id: 7, text: "Zona de Maquillaje", isPayment: false, icon: Book },
   { id: 8, text: "Zona de descanso", isPayment: false, icon: Users },
@@ -228,9 +220,6 @@ export const AboutUs = () => {
               </span>
               <span className="bg-white/20 px-4 py-2 rounded-full">
                 ✅ Satélite hasta 85%
-              </span>
-              <span className="bg-white/20 px-4 py-2 rounded-full">
-                ✅ Bonos adicionales
               </span>
             </div>
           </div>

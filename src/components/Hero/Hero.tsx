@@ -107,12 +107,27 @@ export const Hero = () => {
 
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <button className="group bg-gradient-to-r from-rose-600 to-purple-700 hover:from-rose-700 hover:to-purple-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 flex items-center justify-center">
+              <button
+                className="group bg-gradient-to-r from-rose-600 to-purple-700 hover:from-rose-700 hover:to-purple-800 text-white px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-rose-500/25 flex items-center justify-center"
+                onClick={() =>
+                  window.open(
+                    "https://wa.me/+573045553476?text=¡Hola!%20Quiero%20más%20información%20sobre%20trabajar%20en%20Mystic%20Paradise.%20¿Podrían%20contarme%20sobre%20los%20beneficios%20y%20requisitos?",
+                    "_blank"
+                  )
+                }
+              >
                 <Phone className="w-4 h-4 md:w-5 md:h-5 mr-2" />
                 Contáctanos Ahora
                 <ChevronRight className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
-              <button className="border-2 border-fuchsia-600 text-fuchsia-600 hover:text-gray-900 hover:border-gray-900 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg hover:bg-gray-100/80 transition-all duration-300 backdrop-blur-sm">
+              <button
+                className="border-2 border-fuchsia-600 text-fuchsia-600 hover:text-gray-900 hover:border-gray-900 px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg hover:bg-gray-100/80 transition-all duration-300 backdrop-blur-sm"
+                onClick={() => {
+                  document.getElementById("about")?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
                 Ver Beneficios
               </button>
             </div>

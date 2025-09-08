@@ -57,7 +57,7 @@ Creado un nuevo componente de carrusel como alternativa a la galería masonry:
 
 - ✅ "Pagos hasta el 60%" - Tarjeta destacada
 - ✅ "Pagos Quincenales Puntuales" - Énfasis especial
-- ✅ "Bonos semanales" - Destacado visualmente
+
 - ✅ Sección de llamada a la acción para pagos garantizados
 
 ### 🎯 **Estructura Visual Mejorada**
