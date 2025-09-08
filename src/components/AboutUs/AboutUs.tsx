@@ -2,12 +2,10 @@
 
 import {
   Book,
-  Calendar,
   Camera,
   Coffee,
   CreditCard,
   MapPin,
-  Star,
   Trophy,
   Truck,
   Users,
@@ -23,7 +21,7 @@ const BENEFICIOS = [
   },
   {
     id: 2,
-    text: "Capacitación profesional personalizada para maximizar tus ingresos desde el comienzo",
+    text: "Capacitación profesional y personalizada para maximizar tus ingresos desde el inicio",
     isPayment: false,
   },
   {
@@ -51,10 +49,14 @@ const BENEFICIOS = [
     text: "Asesoría en imagen y marketing personal para potenciar tu éxito",
     isPayment: false,
   },
-
   {
     id: 9,
     text: "Fotografías profesionales mensuales",
+    isPayment: false,
+  },
+  {
+    id: 10,
+    text: "No necesitas experiencia previa; te entrenamos desde cero",
     isPayment: false,
   },
 ];
@@ -72,25 +74,11 @@ const OTROS_BENEFICIOS = [
     isPayment: true,
     icon: Truck,
   },
-  { id: 6, text: "Habitaciones de Lujo", isPayment: false, icon: Star },
-  { id: 7, text: "Zona de Maquillaje", isPayment: false, icon: Book },
+  { id: 7, text: "Zona de maquillaje", isPayment: false, icon: Book },
   { id: 8, text: "Zona de descanso", isPayment: false, icon: Users },
-  { id: 9, text: "Zona de Alimentación", isPayment: false, icon: Coffee },
+  { id: 9, text: "Zona de alimentación", isPayment: false, icon: Coffee },
   { id: 10, text: "Parqueadero cubierto", isPayment: false, icon: Truck },
-  { id: 11, text: "Capacitaciones", isPayment: false, icon: Book },
-  { id: 12, text: "Certificado Laboral", isPayment: false, icon: MapPin },
-  {
-    id: 13,
-    text: "Pagos Quincenales Puntuales",
-    isPayment: true,
-    icon: Calendar,
-  },
-  {
-    id: 14,
-    text: "Fotografía profesional mensual",
-    isPayment: false,
-    icon: Camera,
-  },
+  { id: 12, text: "Certificado laboral", isPayment: false, icon: MapPin },
   {
     id: 15,
     text: "Video profesional cada 6 meses",
@@ -99,7 +87,7 @@ const OTROS_BENEFICIOS = [
   },
   {
     id: 16,
-    text: "Convenio Guía Cereza y Diver Joy",
+    text: "Convenio con Guía Cereza y Diver Joy",
     isPayment: false,
     icon: Users,
   },

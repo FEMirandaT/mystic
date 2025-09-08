@@ -55,7 +55,7 @@ export const Footer = () => {
             </button>
             <div className="flex flex-col items-center md:items-start gap-4 md:gap-8">
               <a
-                href="https://wa.me/+573027557903"
+                href="https://wa.me/+573045553476"
                 aria-label="whatasapp icon that takes you to the whatsapp aplication"
                 target="_blank"
                 rel="noopener noreferrer"
