@@ -1,41 +1,42 @@
 "use client";
 
 import useResponsive from "@/hooks/useResponsive";
-import Image from "next/image";
-import FloatingImages from "./FloatingImages";
 import HeaderLeft from "./HeaderLeft";
 import HeaderRight from "./HeaderRight";
 import HeaderRightAnimated from "./HeaderRightAnimated";
+import StatsSection from "./StatsSection";
 
 const Header = () => {
   const { isMobile } = useResponsive();
 
   return (
-    <header className="w-screen h-screen z-0 relative font-prata" id="header">
-      <div className="flex flex-col h-full items-center justify-between">
-        <Image
-          src="/gradients/gradientWhite.png"
-          alt="Imagen de gradiente"
-          width={1600}
-          height={1600}
-          sizes="(max-width: 750px) 50vw, 25vw"
-          className="absolute top-2/3 right-1/2 opacity-50  pointer-events-none"
-        />
-        <figure className="absolute -top-80 right-0 opacity-30 pointer-events-none">
-          <Image
-            src="/gradients/gradientWhite.png"
-            alt="Imagen de gradiente"
-            width={800}
-            height={800}
-            className="relative"
-            sizes="(max-width: 750px) 50vw, 25vw"
-          />
-        </figure>
-        <HeaderLeft />
-        <div className="w-full relative top-10 md:top-20 ">
-          {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
+    <header
+      className="w-screen z-0 relative font-prata bg-gradient-to-br from-slate-50 via-purple-50 to-pink-50"
+      id="header"
+    >
+      {/* Hero Section */}
+      <div className="min-h-screen flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-4">
+        {/* Sección izquierda - Contenido principal */}
+        <div className="flex-1 flex justify-center lg:justify-start">
+          <HeaderLeft />
         </div>
-        <FloatingImages />
+
+        {/* Sección derecha - Imagen */}
+        <div className="flex-1 flex justify-center lg:justify-end relative">
+          <div className="w-full max-w-lg relative">
+            {isMobile ? <HeaderRight /> : <HeaderRightAnimated />}
+          </div>
+        </div>
+      </div>
+
+      {/* Sección de estadísticas */}
+      <StatsSection />
+
+      {/* Elementos decorativos sutiles */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-purple-200 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-200 rounded-full opacity-20 blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-72 h-72 bg-amber-200 rounded-full opacity-15 blur-3xl"></div>
       </div>
     </header>
   );

@@ -3,26 +3,23 @@
 import { FacebookIcon, InstagramIcon, TiktokIcon } from "../icons";
 
 import { COLORS } from "@/utils/colors";
-import Image from "next/image";
-import { TypeAnimation } from "react-type-animation";
-import { motion } from "motion/react";
 
 export const SOCIAL_NETWORKS = [
   {
     url: "https://www.instagram.com/mysticparadisebogota?igsh=MWhnNmhtbWV3OXA2eA==",
-    icon: <InstagramIcon color={COLORS.primary} size={36} />,
+    icon: <InstagramIcon color={COLORS.primaryLogo} size={36} />,
     label: "Instagram",
     user: "@mysticparadise",
   },
   {
     url: "https://www.tiktok.com/@studio.wc.mystic?_t=8rS5U5rvZEz&_r=1",
-    icon: <TiktokIcon color={COLORS.primary} size={36} />,
+    icon: <TiktokIcon color={COLORS.primaryLogo} size={36} />,
     label: "Tik Tok",
     user: "@mysticparadise",
   },
   {
     url: "https://www.facebook.com/profile.php?id=61564607116969&mibextid=ZbWKwL",
-    icon: <FacebookIcon color={COLORS.primary} size={34} />,
+    icon: <FacebookIcon color={COLORS.primaryLogo} size={34} />,
     label: "Facebook",
   },
 ];
@@ -30,73 +27,66 @@ export const SOCIAL_NETWORKS = [
 const ContactSection = () => {
   return (
     <section
-      className="pt-60 pb-20 flex flex-col w-full h-screen justify-center items-center gap-10 relative z-30"
+      className="pt-10 md:pb-20 flex flex-col w-full min-h-screen justify-center items-center gap-10 relative z-30 px-4"
       id="contact"
     >
-      <h2 className="text-h10 md:text-h5 animated-gradient-text">
-        Nuestras redes
-      </h2>
-      <div
-        className="w-4/5 md:h-2/3 rounded-3xl glass md:glass-extra-strong  flex flex-col justify-center items-center gap-8  p-2 relative"
-        style={{
-          backgroundColor: "transparent",
-          border: "4px solid transparent",
-          borderImage:
-            "linear-gradient(to bottom, #ffeb44, #90c048, #ffeb4488) 1",
-        }}
-      >
-        <figure className="absolute -bottom-[800px] -right-[800px] opacity-40 pointer-events-none ">
-          <Image
-            src="/gradients/gradientWhite.png"
-            alt="Imagen de gradiente"
-            sizes="(max-width: 750px) 50vw, 25vw"
-            width={1800}
-            height={1800}
-            className="relative pointer-events-none"
-          />
-        </figure>
-        <div className="flex flex-col items-center gap-2">
-          <h2 className="text-h5 md:text-h2.5 text-primary">Síguenos</h2>
-          <p className="text-xl max-w-[40rem] text-center text-primary">
-            ¡Únete a nuestra vibrante comunidad en redes sociales!
-          </p>
-          <div className=" flex items-center h-full justify-center min-h-80 md:min-h-40 max-w-[48rem]">
-            <TypeAnimation
-              className="animated-gradient-text text-center text-[2.5rem] md:text-[3rem]"
-              deletionSpeed={5}
-              speed={{ type: "keyStrokeDelayInMs", value: 250 }}
-              sequence={[
-                "Encuentra consejos profesionales,",
-                1000,
-                "conoce a nuestro equipo",
-                1000,
-                "y mantente informada sobre eventos especiales",
-                1000,
-                "Síguenos y sé parte de una comunidad que crece día a día.",
-                1000,
-                "¡No te pierdas ninguna actualización!",
-                1000,
-              ]}
-              // style={{ fontSize: "3em" }}
-              repeat={Infinity}
-            />
+      <div className="text-center md:mb-8">
+        <h2 className="text-3xl md:text-5xl font-bold subtle-gradient-text mb-4">
+          Nuestras redes sociales
+        </h2>
+        <p className="text-lg md:text-xl text-slate-900">
+          Síguenos y mantente conectada con nosotros
+        </p>
+      </div>
+
+      <div className="w-full max-w-4xl rounded-3xl p-8 md:p-12 relative bg-white/80 backdrop-blur-md border border-slate-200 dark:border-slate-800 shadow-xl">
+        <div className="flex flex-col items-center gap-8">
+          <div className="text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-fuchsia-700 dark:text-slate-100 mb-4">
+              Síguenos
+            </h3>
+            <p className="text-lg text-slate-800 dark:text-slate-300 max-w-2xl">
+              ¡Únete a nuestra vibrante comunidad en redes sociales! Encuentra
+              consejos profesionales, conoce a nuestro equipo y mantente
+              informada sobre eventos especiales.
+            </p>
           </div>
-        </div>
-        <div className="flex justify-center gap-8 md:gap-14 z-50">
-          {SOCIAL_NETWORKS.map((sn) => (
-            <motion.a
-              key={sn.url}
-              href={sn.url}
-              target="_blank"
-              aria-label={`Icon that takes you to the network ${sn.label}`}
-              whileHover={{ scale: 2 }}
-              rel="noopener noreferrer"
-              className="flex flex-col gap-2 items-center z-50"
-            >
-              {sn.icon}
-              <span className="text-primary font-semibold">{sn.label}</span>
-            </motion.a>
-          ))}
+
+          {/* Mensaje principal sin animación excesiva */}
+          <div className="text-center py-3 md:py-8">
+            <p className="text-2xl md:text-3xl font-bold subtle-gradient-text">
+              Síguenos y sé parte de una comunidad que crece día a día.
+            </p>
+            <p className="text-lg md:text-xl text-slate-500 dark:text-slate-300 mt-4">
+              ¡No te pierdas ninguna actualización!
+            </p>
+          </div>
+
+          {/* Redes sociales */}
+          <div className="flex justify-center gap-8 md:gap-12 flex-wrap">
+            {SOCIAL_NETWORKS.map((sn) => (
+              <a
+                key={sn.url}
+                href={sn.url}
+                target="_blank"
+                aria-label={`Icon that takes you to the network ${sn.label}`}
+                rel="noopener noreferrer"
+                className="flex flex-col gap-3 items-center group transition-transform duration-200 hover:scale-110"
+              >
+                <div className="p-3 bg-slate-100 dark:bg-white/10 rounded-full group-hover:bg-slate-200 dark:group-hover:bg-white/20 transition-colors">
+                  {sn.icon}
+                </div>
+                <span className="text-slate-800 dark:text-slate-100 font-semibold text-sm">
+                  {sn.label}
+                </span>
+                {sn.user && (
+                  <span className="text-slate-500 dark:text-slate-300 text-xs">
+                    {sn.user}
+                  </span>
+                )}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -35,7 +35,7 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className="w-full glass-extra-strong md:h-[250px] rounded-t-[100px] md:rounded-t-[150px] flex flex-col md:flex-row items-center justify-center py-6 md:py-12 gap-8 overflow-hidden">
+    <footer className="w-full bg-white/80 dark:bg-slate-900/70 backdrop-blur-md border-t border-slate-200 dark:border-slate-800 md:h-[250px] rounded-t-[32px] md:rounded-t-[48px] flex flex-col md:flex-row items-center justify-center py-8 md:py-12 gap-8 overflow-hidden">
       <div className="w-full max-w-wrapper flex flex-col md:flex-row items-center  justify-between">
         <div className="flex flex-col items-center md:items-start justify-center space-y-8 md:space-y-4">
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
@@ -44,7 +44,7 @@ export const Footer = () => {
               aria-label="hom button with logo"
             >
               <Image
-                src={"/logov2.png"}
+                src={"/logov1.png"}
                 sizes="(max-width: 750px) 50vw, 25vw"
                 alt=""
                 quality={100}
@@ -59,13 +59,13 @@ export const Footer = () => {
                 aria-label="whatasapp icon that takes you to the whatsapp aplication"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary flex gap-2 items-center"
+                className="text-slate-800 dark:text-slate-100 flex gap-2 items-center"
               >
-                <WhatsappIcon size={36} color={COLORS.primary} />
-                <span>Contactanos a nuestro Whatsapp</span>
+                <WhatsappIcon size={28} color={COLORS.primarydark} />
+                <span className="font-medium">Contáctanos por WhatsApp</span>
               </a>
               <div className="flex flex-col gap-4">
-                <h2 className="text-primary text-sm">
+                <h2 className="text-slate-600 dark:text-slate-300 text-sm">
                   Nuestras redes sociales
                 </h2>
                 <div className="flex gap-4">
@@ -75,7 +75,7 @@ export const Footer = () => {
                       href={sn.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      whileHover={{ scale: 2 }}
+                      whileHover={{ scale: 1.15 }}
                       className="flex flex-col gap-2 items-center"
                     >
                       {sn.icon}
@@ -86,20 +86,20 @@ export const Footer = () => {
             </div>
             <motion.button
               onClick={() => lenis?.scrollTo("#about")}
-              className="text-primary text-3xl underline"
+              className="text-purple-600 dark:text-purple-300 text-lg underline"
               whileHover={{ scale: 1.1 }}
             >
               ¿Por qué nosotros?
             </motion.button>
           </div>
           <div className="flex flex-col items-center gap-1">
-            <p className="l1 text-p-2 text-center text-primary">
+            <p className="l1 text-p-2 text-center text-slate-600 dark:text-slate-300">
               © Copyright {new Date().getFullYear()} — &quot;Todos los derechos
               reservados&quot;
             </p>
             <a
               href="https://www.mirandadev.com"
-              className="text-xs text-center text-primary underline"
+              className="text-xs text-center text-slate-500 dark:text-slate-400 underline"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -136,7 +136,7 @@ export const Footer = () => {
           </motion.div>
         </div>
       </div>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-40  pointer-events-none">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[400px] md:-right-[400px] opacity-20 pointer-events-none">
         <Image
           src="/gradients/gradientWhite.png"
           sizes="(max-width: 750px) 50vw, 25vw"
@@ -146,7 +146,7 @@ export const Footer = () => {
           className="relative   "
         />
       </figure>
-      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-40 pointer-events-none ">
+      <figure className="absolute bottom-0 right-0 md:-bottom-[200px] md:-left-52 opacity-10 pointer-events-none ">
         <Image
           src="/gradients/gradientWhite.png"
           alt="Imagen de gradiente"

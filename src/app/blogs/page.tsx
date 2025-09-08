@@ -37,13 +37,13 @@ export const metadata: Metadata = {
 
 const BlogsPage = () => {
   return (
-    <section className=" top-28 md:top-40 relative w-full flex flex-col gap-10 px-2 max-w-7xl">
+    <section className="top-10 md:top-20 relative w-full flex flex-col gap-10 px-2 max-w-7xl">
       <div className="flex flex-col gap-2">
-        <h1 className="text-gold text-2xl md:text-5xl">
+        <h1 className="text-slate-900 text-2xl md:text-5xl">
           La mejor información si quieres ser{" "}
-          <span className="text-white">modelo webcam</span>
+          <span className="text-fuchsia-700">modelo webcam</span>
         </h1>
-        <h2 className="text-primary text-lg md:text-3xl">
+        <h2 className="text-fuchsia-900 text-lg md:text-3xl">
           Encuentra los mejores consejos
         </h2>
       </div>

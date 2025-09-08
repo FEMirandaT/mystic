@@ -9,78 +9,78 @@ body {
 @layer base {
   :root {
     --radius: 0.5rem;
-    --primaryDark: #90c048;
-    --gold: #ffeb44;
-    --orange-gradient-background: linear-gradient(
-      90deg,
-      rgb(255, 255, 255) 0%,
-      #ffeb44 50%,
-      rgb(255, 255, 255) 100%
+    --primaryDark: #8b5cf6;
+    --gold: #f59e0b;
+    --accent: #ec4899;
+    --elegant-gradient: linear-gradient(
+      135deg,
+      #8b5cf6 0%,
+      #ec4899 50%,
+      #f59e0b 100%
     );
   }
 }
 
 .glass {
-  background: #1d221e4a;
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
 .glass-strong {
-  background: #1727184a;
-  backdrop-filter: blur(12.5px);
-  -webkit-backdrop-filter: blur(12.5px);
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 .glass-extra-strong-sidebar {
-  background: #001c02e8;
-  backdrop-filter: blur(16.5px);
-  -webkit-backdrop-filter: blur(16.5px);
+  background: linear-gradient(
+    135deg,
+    rgba(161, 27, 173, 0.95) 0%,
+    rgba(141, 7, 153, 0.98) 100%
+  );
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
 }
+
 .glass-extra-strong {
-  background: #1727184a;
-  backdrop-filter: blur(16.5px);
-  -webkit-backdrop-filter: blur(16.5px);
+  background: rgba(30, 41, 59, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
+
 .glass2 {
-  background: #1818186b;
-  backdrop-filter: blur(4.5px);
-  -webkit-backdrop-filter: blur(4.5px);
+  background: rgba(51, 65, 85, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.gradient1 {
-  color: inherit;
-  background-image: radial-gradient(
-      circle at 90% 50%,
-      #040500 0%,
-      rgba(255, 255, 255, 0) 89%
-    ),
-    radial-gradient(circle at 200% 200%, #090a00 0%, rgba(255, 255, 255, 0) 69%),
-    linear-gradient(140deg, #000900 1%, rgba(255, 255, 255, 0) 68%),
-    radial-gradient(circle at 200% 50%, #000000 2%, rgba(255, 255, 255, 0) 74%),
-    radial-gradient(circle at 200% 200%, rgba(255, 255, 255, 0) 0%, #000000 97%);
+.elegant-gradient-bg {
+  background: var(--elegant-gradient);
 }
 
-.animated-gradient-text {
-  background: var(--orange-gradient-background);
+.elegant-gradient-text {
+  background: var(--elegant-gradient);
   background-size: 200%;
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 5s linear infinite;
   color: transparent;
 }
 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
+/* Simplificado - sin animación constante */
+.subtle-gradient-text {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 50%, #f59e0b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* From Uiverse.io by gharsh11032000 */

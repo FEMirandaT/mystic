@@ -29,39 +29,44 @@ export const Sidebar = ({ isSidebarOpen, setSidebarOpen }: Props) => {
 
   return (
     <nav
-      className={`fixed lg:hidden top-0 right-0 w-[103vw] h-screen flex flex-col justify-start transform transition-transform duration-300 ease-in-out z-50 glass-extra-strong-sidebar ${
+      className={`fixed lg:hidden top-0 right-0 w-full h-screen flex flex-col justify-start transform transition-transform duration-300 ease-in-out z-50 glass-extra-strong-sidebar ${
         isSidebarOpen ? "translate-x-0" : "translate-x-full"
-      } z-40 px-4 pt-108 pb-6`}
+      } px-6 pt-20 pb-6`}
     >
-      <header className="w-full">
+      <header className="w-full mb-8">
         <IconButton
-          icon={(color) => <CloseIcon color={color} size={16} />}
+          icon={(color) => <CloseIcon color={color} size={20} />}
           onClick={handleCLose}
           position="absolute"
-          topPosition="2"
-          rightPosition="3"
-          iconSize={16}
+          topPosition="4"
+          rightPosition="6"
+          iconSize={20}
         />
+        <div className="mt-8">
+          <h2 className="text-2xl font-bold text-white mb-2">Menú Principal</h2>
+          <div className="w-16 h-1 bg-white/30 rounded-full"></div>
+        </div>
       </header>
-      <div className="flex flex-col flex-1 mt-20">
-        <div className="w-full relative flex flex-col gap-20">
-          <div className={`transition-all flex flex-col gap-8`}>
-            <h3 className="text-h10 text-primarydark  inline">Menú</h3>
-          </div>
+
+      <div className="flex flex-col flex-1 overflow-y-auto">
+        <div className="w-full relative flex flex-col gap-6 flex-1">
           <SidebarLinks />
         </div>
       </div>
-      <p className="l1 text-p-2 text-center text-primarydark">
-        © Copyright 2024 — &quot;Todos los derechos reservados&quot;
-      </p>
-      <a
-        href="https://www.mirandadev.com"
-        className="text-xs text-center text-primary underline"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Desarrollado por FMirandaDev
-      </a>
+
+      <footer className="mt-8 pt-6 border-t border-white/20">
+        <p className="text-sm text-center text-white/80 mb-2">
+          © Copyright 2024 — "Todos los derechos reservados"
+        </p>
+        <a
+          href="https://www.mirandadev.com"
+          className="text-xs text-center text-white/60 hover:text-white underline block transition-colors duration-300"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Desarrollado por FMirandaDev
+        </a>
+      </footer>
     </nav>
   );
 };

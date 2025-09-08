@@ -3,11 +3,11 @@ import "./globals.css";
 import { Pinyon_Script, Prata } from "next/font/google";
 
 import { LenisProvider } from "@/components/LenisProvider";
-import type { Metadata } from "next";
 import { Navbar } from "@/components/Navbar";
-import Script from "next/script";
-import { SidebarProvider } from "@/components/Providers/SidebarProvider";
 import { ThemeProvider } from "@/components/Providers";
+import { SidebarProvider } from "@/components/Providers/SidebarProvider";
+import type { Metadata } from "next";
+import Script from "next/script";
 
 const prata = Prata({
   subsets: ["latin"],
@@ -132,11 +132,11 @@ export default function RootLayout({
       />
       <LenisProvider isRoot>
         <body
-          className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex justify-center gradient1`}
+          className={`${prata.variable} ${pinyon.variable}  antialiased w-full flex flex-col justify-center gradient1`}
         >
           <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="light"
             enableSystem
             disableTransitionOnChange
           >

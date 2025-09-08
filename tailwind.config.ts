@@ -33,11 +33,16 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        primary: "#eaffcb",
-        gold: "#ffeb44",
-        primaryButton: "#4f8300",
-        primarydark: "#90c048",
-        primarydarkest: "#203500",
+        primary: "#f8fafc", // Slate 50
+        gold: "#f59e0b", // Amber 500
+        primaryButton: "#8b5cf6", // Purple 500
+        primarydark: "#8b5cf6", // Purple 500
+        primarydarkest: "#4c1d95", // Purple 800
+        accent: "#ec4899", // Pink 500
+        bgDark: "#0f172a", // Slate 900
+        surface: "#1e293b", // Slate 800
+        textMain: "#334155", // Slate 700
+        textSecondary: "#64748b", // Slate 500
         "transparent-10": "#00000014",
       },
       borderRadius: {
