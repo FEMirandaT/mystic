@@ -21,7 +21,8 @@ export const Navbar = () => {
       <Link
         href="/"
         onClick={() => lenis?.scrollTo(`.header-container`)}
-        aria-label="hom button with logo"
+        aria-label="home button with logo"
+        title="Ir al inicio"
       >
         <Image
           src={"/logov1.png"}

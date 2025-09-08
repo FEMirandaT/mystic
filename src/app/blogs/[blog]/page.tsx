@@ -46,7 +46,7 @@ const BlogPage = async ({ params }: Props) => {
   }
 
   return (
-    <div className="flex flex-col w-full max-w-mw-container items-center gap-20 px-4 mx-auto">
+    <div className="flex flex-col w-full max-w-mw-container justify-center items-center gap-20 px-4 mx-auto">
       <Header
         title={article.title}
         image={article.image}

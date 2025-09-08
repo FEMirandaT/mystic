@@ -12,6 +12,8 @@ export default function FacebookIcon({
         width={size}
         height={size}
         viewBox="0 0 24 24"
+        aria-hidden="true"
+        focusable="false"
       >
         <g fill="none">
           <g clipPath="url(#akarIconsFacebookFill0)">

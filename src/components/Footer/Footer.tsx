@@ -41,7 +41,8 @@ export const Footer = () => {
           <div className="flex flex-col md:flex-row gap-4 md:gap-8 items-center justify-between">
             <button
               onClick={() => lenis?.scrollTo(`#header`)}
-              aria-label="hom button with logo"
+              aria-label="home button with logo"
+              title="Ir al inicio"
             >
               <Image
                 src={"/logov1.png"}
@@ -56,7 +57,8 @@ export const Footer = () => {
             <div className="flex flex-col items-center md:items-start gap-4 md:gap-8">
               <a
                 href="https://wa.me/+573045553476"
-                aria-label="whatasapp icon that takes you to the whatsapp aplication"
+                aria-label="WhatsApp: contáctanos"
+                title="Contactar por WhatsApp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-slate-800 dark:text-slate-100 flex gap-2 items-center"
@@ -77,6 +79,8 @@ export const Footer = () => {
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.15 }}
                       className="flex flex-col gap-2 items-center"
+                      aria-label={`Ir a ${sn.label}`}
+                      title={sn.label}
                     >
                       {sn.icon}
                     </motion.a>

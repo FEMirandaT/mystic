@@ -142,7 +142,7 @@ const CarouselGallery = ({ setSelected }: CarouselGalleryProps) => {
             <button
               key={index}
               onClick={() => goToSlide(index * visibleImages)}
-              className={`w-3 h-3 rounded-full transition-all duration-200 ${
+              className={`w-3 h-3 p-1 rounded-full transition-all duration-200 ${
                 Math.floor(currentIndex / visibleImages) === index
                   ? "bg-rose-500 scale-110"
                   : "bg-slate-300 hover:bg-slate-400"

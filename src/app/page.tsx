@@ -30,7 +30,7 @@ export default function Home() {
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.1 }}
-        className="fixed flex gap-2 items-center bottom-6 right-6 md:bottom-8 md:right-8 bg-green-500 hover:bg-green-600 px-4 py-3 rounded-full shadow-2xl z-40 transition-all duration-200"
+        className="fixed flex gap-2 items-center bottom-6 right-6 md:bottom-8 md:right-8 bg-green-800 hover:bg-green-900 px-4 py-3 rounded-full shadow-2xl z-40 transition-all duration-200"
       >
         <WhatsappIcon color={COLORS.white} size={32} />
         <span className="hidden sm:block text-white font-semibold text-sm">

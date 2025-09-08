@@ -37,7 +37,7 @@ export const metadata: Metadata = {
 
 const BlogsPage = () => {
   return (
-    <section className="top-10 md:top-20 relative w-full flex flex-col gap-10 px-2 max-w-7xl">
+    <section className="top-10 md:top-20 relative w-full flex flex-col gap-10 px-2 max-w-7xl mx-auto">
       <div className="flex flex-col gap-2">
         <h1 className="text-slate-900 text-2xl md:text-5xl">
           La mejor información si quieres ser{" "}
