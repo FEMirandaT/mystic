@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mysticparadise.top/blogs",
   },
+  metadataBase: new URL("https://www.mysticparadise.top"),
   openGraph: {
     title: "La mejor información si quieres ser modelo webcam",
     description:

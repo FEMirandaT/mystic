@@ -54,11 +54,6 @@ const BENEFICIOS = [
     text: "Fotografías profesionales mensuales",
     isPayment: false,
   },
-  {
-    id: 10,
-    text: "No necesitas experiencia previa; te entrenamos desde cero",
-    isPayment: false,
-  },
 ];
 
 const OTROS_BENEFICIOS = [
@@ -73,6 +68,11 @@ const OTROS_BENEFICIOS = [
     text: "Pagos modelos SATÉLITE hasta el 85%",
     isPayment: true,
     icon: Truck,
+  },
+  {
+    id: 3,
+    text: "No necesitas experiencia previa; te entrenamos desde cero",
+    isPayment: true,
   },
   { id: 7, text: "Zona de maquillaje", isPayment: false, icon: Book },
   { id: 8, text: "Zona de descanso", isPayment: false, icon: Users },

@@ -76,6 +76,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.mysticparadise.top/",
   },
+  metadataBase: new URL("https://www.mysticparadise.top"),
   robots: {
     index: true,
     follow: true,
