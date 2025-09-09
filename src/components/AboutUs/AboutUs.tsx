@@ -73,6 +73,7 @@ const OTROS_BENEFICIOS = [
     id: 3,
     text: "No necesitas experiencia previa; te entrenamos desde cero",
     isPayment: true,
+    icon: Book,
   },
   { id: 7, text: "Zona de maquillaje", isPayment: false, icon: Book },
   { id: 8, text: "Zona de descanso", isPayment: false, icon: Users },
