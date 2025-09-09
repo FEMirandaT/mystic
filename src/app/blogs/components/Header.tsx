@@ -20,7 +20,7 @@ export const Header = ({ title, image, subtitle }: Props) => {
           />
         </figure>
         <div className="h-2/3 w-full md:w-2/3 flex flex-col gap-2 justify-end">
-          <h1 className="text-2xl md:text-5xl text-gold font-semibold text-center md:text-start">
+          <h1 className="text-2xl md:text-5xl text-fuchsia-700 font-semibold text-center md:text-start">
             {title}
           </h1>
           <p className="text-lg md:text-2xl text-center md:text-start">

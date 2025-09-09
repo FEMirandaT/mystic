@@ -52,7 +52,7 @@ const BlogPage = async ({ params }: Props) => {
         image={article.image}
         subtitle={article.subtitle}
       />
-      <div className="flex flex-col gap-8 w-full max-w-wrapper items-start leading-relaxed text-neutral-300">
+      <div className="flex flex-col gap-8 w-full max-w-wrapper items-start leading-relaxed text-neutral-800">
         {article.content.map((section, index) => {
           if (section.type === "paragraph") {
             return (
@@ -68,7 +68,7 @@ const BlogPage = async ({ params }: Props) => {
                 key={index}
                 className="text-2xl md:text-3xl font-semibold mb-4 text-start text-white"
               >
-                <span className="inline-block text-gradient bg-gradient-to-r from-yellow-400 via-neutral-200 to-yellow-500 bg-clip-text text-transparent">
+                <span className="inline-block text-gradient bg-gradient-to-r from-fuchsia-700 via-fuchsia-5000 to-fuchsia-800 bg-clip-text text-transparent">
                   {section.text}
                 </span>
               </HeadingTag>
